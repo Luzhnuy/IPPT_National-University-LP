@@ -37,7 +37,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="iphp"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -74,20 +74,20 @@
 							    <ul class="navbar-nav"> <!--  mr-auto -->
 							    	<!-- <div class="row justify-content-center justify-content-md-end"> -->
 							    		<li class="nav-item">
-									        <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									        <a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 									    </li>
 									    <li class="nav-item">
-									        <a class="nav-link" href="entrant.html">Вступнику</a>
+									        <a class="nav-link" href="entrant.php">Вступнику</a>
 									    </li>
 									    <li class="nav-item">
-									        <a class="nav-link" href="student.html">Студенту</a>
+									        <a class="nav-link" href="student.php">Студенту</a>
 									    </li>
 									    <li class="nav-item">
-									        <a class="nav-link" href="graduate.html">Випускнику</a>
+									        <a class="nav-link" href="graduate.php">Випускнику</a>
 									    </li>
 									    <li class="nav-item active">
 									        <!-- <a class="nav-link" href="blog/index.html">Блог</a> -->
-									        <a class="nav-link" href="news-archive.html">Новини</a>
+									        <a class="nav-link" href="news-archive.php">Новини</a>
 									    </li>
 							    	<!-- </div> -->
 							    </ul>
@@ -113,8 +113,8 @@
 			<div class="row">
 				<div class="col-12">
 					<ol class="breadcrumb">
-					  <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-					  <li class="breadcrumb-item"><a href="news-archive.html">Новини</a></li>
+					  <li class="breadcrumb-item"><a href="index.php">Головна</a></li>
+					  <li class="breadcrumb-item"><a href="news-archive.php">Новини</a></li>
 					  <li class="breadcrumb-item active">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
 					</ol>
 				</div>
@@ -172,7 +172,7 @@
 											<div class="col-4">
 												<div class="news-more-img">
 													<div class="news-more-img-btn">
-														<a href="gallery.html" class="btn btn-aqua"><i class="fa fa-plus" aria-hidden="true"></i></a>
+														<a href="gallery.php" class="btn btn-aqua"><i class="fa fa-plus" aria-hidden="true"></i></a>
 													</div>
 												</div>
 											</div>
@@ -206,7 +206,7 @@
 											<img src="sources/img/news/IMG_4731.jpg" alt="last-news-img">
 										</div>
 										<div class="last-news-title">
-											<h4 class="text-center"><a href="news.html" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
 										</div>
 										<div class="last-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -220,7 +220,7 @@
 											<img src="sources/img/news/IMG_4752.jpg" alt="last-news-img">
 										</div>
 										<div class="last-news-title">
-											<h4 class="text-center"><a href="news.html" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
 										</div>
 										<div class="last-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -242,7 +242,7 @@
 											<img src="sources/img/news/IMG_4731.jpg" alt="top-news-img">
 										</div>
 										<div class="top-news-title">
-											<h4 class="text-center"><a href="news.html" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
 										</div>
 										<div class="top-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -256,7 +256,7 @@
 											<img src="sources/img/news/IMG_4752.jpg" alt="top-news-img">
 										</div>
 										<div class="top-news-title">
-											<h4 class="text-center"><a href="news.html" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
 										</div>
 										<div class="top-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -278,7 +278,7 @@
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>

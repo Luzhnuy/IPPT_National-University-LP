@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IPPT - news archive</title>
+	<title>IPPT - gallery</title>
 
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -34,7 +34,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="iphp"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -69,19 +69,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="entrant.html">Вступнику</a>
+									<a class="nav-link" href="entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.html">Студенту</a>
+									<a class="nav-link" href="student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.html">Випускнику</a>
+									<a class="nav-link" href="graduate.php">Випускнику</a>
 								</li>
-								<li class="nav-item active">
-									<a class="nav-link" href="news-archive.html">Новини</a>
+								<li class="nav-item">
+									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -99,14 +99,21 @@
 		</div>
 	</header>
 
-	<!-- NEWS ARCHIVE PAGE -->
-	<div id="news-archive" class="news-archive">
+	<!-- GALLERY PAGE -->
+	<div id="gallery-page" class="gallery-page">
 		<div class="container">
 			<div class="row">
+				<div class="col-12">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="index.php">Головна</a></li>
+					  <li class="breadcrumb-item"><a href="about-us.php">Про інститут</a></li>
+					  <li class="breadcrumb-item active">Галерея</li>
+					</ol>
+				</div>
 				<div class="col-12 col-lg-3">
-					<div class="news-archive-navbar">
+					<div class="gallery-navbar">
 						<ul>
-							<li><a href="#allnews" class="active">Всі новини</a></li>
+							<li><a href="#allnews" class="active">Всі альбоми</a></li>
 							<li><a href="#sport">Спорт</a></li>
 							<li><a href="#science">Наука</a></li>
 							<li><a href="#seminars">Семінари</a></li>
@@ -118,62 +125,65 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-9">
-					<div class="news-archive-section">
-						<h2>Всі новини</h2>
-						<div class="news-archive-container">
-							<div class="row no-gutters">
-								<div class="col-md-4">
-									<div class="news-archive-img img">
-										<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
+					<div class="gallery-section">
+						<h2>Всі альбоми</h2>
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<a href="gallery-album.php">
+									<div class="gallery-container">
+										<div class="gallery-img img">
+											<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
+										</div>
+										<div class="gallery-text">
+											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h3 class="text-blue">Lorem Ipsum</h3>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="news-archive-text">
-										<h3><a href="news.html" class="text-blue">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">25.09.2017, 12:00</h5>
-										<p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
-									</div>
-								</div>
+								</a>
 							</div>
-						</div>
-
-						<div class="news-archive-container">
-							<div class="row no-gutters">
-								<div class="col-md-4">
-									<div class="news-archive-img img">
-										<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
+							<div class="col-12 col-md-4">
+								<a href="gallery-album.php">
+									<div class="gallery-container">
+										<div class="gallery-img img">
+											<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
+										</div>
+										<div class="gallery-text">
+											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h3 class="text-blue">Lorem Ipsum</h3>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="news-archive-text">
-										<h3><a href="news.html" class="text-blue">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">25.09.2017, 12:00</h5>
-										<p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
-									</div>
-								</div>
+								</a>
 							</div>
-						</div>
-
-						<div class="news-archive-container">
-							<div class="row no-gutters">
-								<div class="col-md-4">
-									<div class="news-archive-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
+							<div class="col-12 col-md-4">
+								<a href="gallery-album.php">
+									<div class="gallery-container">
+										<div class="gallery-img img">
+											<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
+										</div>
+										<div class="gallery-text">
+											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h3 class="text-blue">Lorem Ipsum</h3>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="news-archive-text">
-										<h3><a href="news.html" class="text-blue">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">25.09.2017, 12:00</h5>
-										<p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
+								</a>
+							</div>
+							<div class="col-12 col-md-4">
+								<a href="gallery-album.php">
+									<div class="gallery-container">
+										<div class="gallery-img img">
+											<img src="sources/img/news/IMG_4805.jpg" alt="news-img">
+										</div>
+										<div class="gallery-text">
+											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h3 class="text-blue">Lorem Ipsum</h3>
+										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="news-archive-footer">
-						<!-- <a href="#" class="btn btn-orange"><button>Завантажити ще</button></a> -->
+					<div class="gallery-footer">
 						<nav aria-label="Page navigation example">
 						    <ul class="pagination">
 							    <li class="page-item">
@@ -205,7 +215,7 @@
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>

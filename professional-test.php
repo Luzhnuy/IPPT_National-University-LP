@@ -40,7 +40,7 @@
 	        <h4 class="text-center text-blue">Ваш результат: <span class="text-orange">технар</span></h4>
 	      </div>
 	      <div class="modal-footer justify-content-center">
-	        <a href="entrant.html" class="btn btn-test btn-orange"><button>Круто! Я красавчик</button></a>
+	        <a href="entrant.php" class="btn btn-test btn-orange"><button>Круто! Я красавчик</button></a>
 	      </div>
 	    </div>
 	  </div>

@@ -34,7 +34,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -69,19 +69,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item active">
-									<a class="nav-link" href="entrant.html">Вступнику</a>
+									<a class="nav-link" href="entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.html">Студенту</a>
+									<a class="nav-link" href="student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.html">Випускнику</a>
+									<a class="nav-link" href="graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="news-archive.html">Новини</a>
+									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -138,7 +138,7 @@
 									<h3 class="text-blue">Маркетинг</h3>
 									<hr>
 									<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium et veritatis perferendis ex officia accusamus sed accusantium ratione adipisci porro error voluptatum explicabo delectus possimus, sint perspiciatis ut quibusdam.</p>
-									<p class="specialty-more"><a href="specialty.html" target="_blank" class="text-bold text-italic text-aqua">Детальніше</a></p>
+									<p class="specialty-more"><a href="specialty.php" target="_blank" class="text-bold text-italic text-aqua">Детальніше</a></p>
 								</div>
 							</div>
 
@@ -259,7 +259,7 @@
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>

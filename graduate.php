@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IPPT - gallery</title>
+	<title>IPPT - Graduate's page</title>
 
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -34,7 +34,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -69,19 +69,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="entrant.html">Вступнику</a>
+									<a class="nav-link" href="entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.html">Студенту</a>
+									<a class="nav-link" href="student.php">Студенту</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.html">Випускнику</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="news-archive.html">Новини</a>
+									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -99,123 +99,17 @@
 		</div>
 	</header>
 
-	<!-- GALLERY PAGE -->
-	<div id="gallery-page" class="gallery-page">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<ol class="breadcrumb">
-					  <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-					  <li class="breadcrumb-item"><a href="about-us.html">Про інститут</a></li>
-					  <li class="breadcrumb-item active">Галерея</li>
-					</ol>
-				</div>
-				<div class="col-12 col-lg-3">
-					<div class="gallery-navbar">
-						<ul>
-							<li><a href="#allnews" class="active">Всі альбоми</a></li>
-							<li><a href="#sport">Спорт</a></li>
-							<li><a href="#science">Наука</a></li>
-							<li><a href="#seminars">Семінари</a></li>
-							<li><a href="#events">Події</a></li>
-							<li><a href="#trips">Подорожі</a></li>
-							<li><a href="#spring-of-lp">"Весна політехніки"</a></li>
-							<li><a href="#autumn-of-lp">"Осінь політехніки"</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 col-lg-9">
-					<div class="gallery-section">
-						<h2>Всі альбоми</h2>
-						<div class="row">
-							<div class="col-12 col-md-4">
-								<a href="gallery-album.html">
-									<div class="gallery-container">
-										<div class="gallery-img img">
-											<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
-										</div>
-										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
-											<h3 class="text-blue">Lorem Ipsum</h3>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-md-4">
-								<a href="gallery-album.html">
-									<div class="gallery-container">
-										<div class="gallery-img img">
-											<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
-										</div>
-										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
-											<h3 class="text-blue">Lorem Ipsum</h3>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-md-4">
-								<a href="gallery-album.html">
-									<div class="gallery-container">
-										<div class="gallery-img img">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
-										</div>
-										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
-											<h3 class="text-blue">Lorem Ipsum</h3>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-md-4">
-								<a href="gallery-album.html">
-									<div class="gallery-container">
-										<div class="gallery-img img">
-											<img src="sources/img/news/IMG_4805.jpg" alt="news-img">
-										</div>
-										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
-											<h3 class="text-blue">Lorem Ipsum</h3>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
+	<section id="graduate" class="graduate">
+		<h2 class="text-center">Інформація з'явиться незабаром.</h2>
+	</section>
 
-					<div class="gallery-footer">
-						<nav aria-label="Page navigation example">
-						    <ul class="pagination">
-							    <li class="page-item">
-							        <a class="page-link" href="#" aria-label="Previous">
-							        	<span aria-hidden="true">&laquo;</span>
-							        	<span class="sr-only">Previous</span>
-							        </a>
-							    </li>
-							    <li class="page-item"><a class="page-link" href="#">1</a></li>
-							    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-							    <li class="page-item"><a class="page-link" href="#">3</a></li>
-							    <li class="page-item">
-							        <a class="page-link" href="#" aria-label="Next">
-							        	<span aria-hidden="true">&raquo;</span>
-							        	<span class="sr-only">Next</span>
-							        </a>
-							    </li>
-						    </ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>
@@ -239,7 +133,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

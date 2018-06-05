@@ -37,7 +37,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -72,19 +72,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item active">
-									<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="entrant.html">Вступнику</a>
+									<a class="nav-link" href="entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.html">Студенту</a>
+									<a class="nav-link" href="student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.html">Випускнику</a>
+									<a class="nav-link" href="graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="news-archive.html">Новини</a>
+									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -108,7 +108,7 @@
 		<div id="slider" class="slider">
 			<div class="hot-news hot-news-1">
 				<span><i class="fa fa-puzzle-piece large" aria-hidden="true"></i></span>
-				<a class="hide-text" href="projects.html">Проекти</a>
+				<a class="hide-text" href="projects.php">Проекти</a>
 			</div>
 			<div class="hot-news hot-news-2">
 				<span><i class="fa fa-cloud large" aria-hidden="true"></i></span>
@@ -145,25 +145,25 @@
 				<i class="icons icons-white fa fa-university" aria-hidden="true"></i>
 				<h3 class="text-white">Про інститут</h3>
 				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
-				<a href="about-us.html" class="btn btn-blue">Читати більше</a>
+				<a href="about-us.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-graduation-cap" aria-hidden="true"></i>
 				<h3 class="text-white">Освіта та Наука</h3>
 				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
-				<a href="education-science.html" class="btn btn-blue">Читати більше</a>
+				<a href="education-science.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-smile-o" aria-hidden="true"></i>
 				<h3 class="text-white">Студентська Kолегія</h3>
 				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
-				<a href="student-college.html" class="btn btn-blue" target="_blank">Читати більше</a>
+				<a href="student-college.php" class="btn btn-blue" target="_blank">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-object-group" aria-hidden="true"></i>
 				<h3 class="text-white">Галерея</h3>
 				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
-				<a href="gallery.html" class="btn btn-blue">Читати більше</a>
+				<a href="gallery.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			</div>
 		</div>
@@ -173,7 +173,7 @@
 			<div class="container">
 				<h1>Вступна кампанія 2018</h1>
 				<p>Умови вступу у вищий навчальний заклад уже тут!</p>
-				<a href="entrant.html" class="btn btn-aqua">Читати більше</a>
+				<a href="entrant.php" class="btn btn-aqua">Читати більше</a>
 			</div>
 		</div>
 

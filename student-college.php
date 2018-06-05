@@ -395,7 +395,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -413,7 +413,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -431,7 +431,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -449,7 +449,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -459,7 +459,7 @@
 					</div>
 				</div>
 				<div class="add-enother-news">
-					<a href="news-archive.html" class="btn btn-aqua">Переглянути більше</a>
+					<a href="news-archive.php" class="btn btn-aqua">Переглянути більше</a>
 				</div>
 			</div>
 		</div>

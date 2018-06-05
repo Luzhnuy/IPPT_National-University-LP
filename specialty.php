@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IPPT - Education and Science</title>
+	<title>IPPT - Specialty page</title>
 
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -34,7 +34,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -69,19 +69,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="entrant.html">Вступнику</a>
+									<a class="nav-link" href="entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.html">Студенту</a>
+									<a class="nav-link" href="student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.html">Випускнику</a>
+									<a class="nav-link" href="graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="news-archive.html">Новини</a>
+									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -99,78 +99,34 @@
 		</div>
 	</header>
 
-	<section id="education-science" class="education-science">
+	<section id="specialty-page" class="specialty-page">
 		<div class="container">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-				<li class="breadcrumb-item active">Освіта і наука</li>
-			</ol>
-			<div class="educational-programs">
-				<h2 class="text-center">Освітні програми</h2>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="program-card">
-							<div class="program-title">
-								<h3 class="text-center text-white">Магістр</h3>
-							</div>
-							<div class="program-info">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam quam commodi, odio quaerat tenetur dolorem consequatur provident, delectus sapiente sequi iusto nisi dicta voluptates ratione quisquam maiores qui obcaecati.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="program-card">
-							<div class="program-title">
-								<h3 class="text-center text-white">Бакалавр</h3>
-							</div>
-							<div class="program-info">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi quibusdam laboriosam consectetur natus. Obcaecati unde iusto facilis rem sequi iste debitis adipisci similique fugiat doloribus. Beatae hic debitis, ipsa.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="program-card">
-							<div class="program-title">
-								<h3 class="text-center text-white">Молодший спеціаліст</h3>
-							</div>
-							<div class="program-info">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequatur maiores illo necessitatibus. Ex architecto quo excepturi, consectetur qui vel. Doloremque suscipit impedit explicabo laborum laboriosam sint corrupti culpa quas.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="conferences">
-				<h2 class="text-center">Наукові конференції</h2>
-				<div class="scientific-pedagogical-conferences conference">
-					<div class="conference-title">
-						<h3 class="text-white">Науково педагогічних працівників</h3>
-					</div>
-					<div class="conferences-info text-right">
-						<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores accusamus, obcaecati dicta quasi harum sequi quos corrupti debitis aliquam cumque aspernatur ex officia, quam provident beatae sit asperiores perferendis?</p>
-						<a href="news-archive.html" class="btn btn-aqua">Переглянути</a>
-					</div>
-				</div>
-				<div class="students-conferences conference">
-					<div class="conference-title">
-						<h3 class="text-white">Студентів</h3>
-					</div>
-					<div class="conferences-info text-right">
-						<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore placeat doloribus, earum, omnis delectus iure ducimus. Ipsum, necessitatibus doloribus beatae non labore optio incidunt dignissimos, distinctio fugit ad blanditiis veritatis.</p>
-						<a href="news-archive.html" class="btn btn-aqua">Переглянути</a>
-					</div>
-				</div>
-			</div>
+			<h2 class="text-center">Маркетинг</h2>
+			<p><span class="text-bold text-blue">Маркетинг</span> - це lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum inventore accusantium harum, velit minima laudantium maxime excepturi, quaerat, possimus cupiditate architecto fuga dolor rem vero enim, perferendis porro voluptatibus ducimus.</p>
+			<p>За спеціальністю маркетинг здійснюються підготовка <span class="text-bold text-italic">молодших спеціалістів</span> та <span class="text-bold text-italic">бакалаврів</span>.</p>
+			<p class="text-bold">Місця праці молодших спеціалістів:</p>
+			<ul>
+				<li>Місце праці 1</li>
+				<li>Місце праці 2</li>
+				<li>Місце праці 3</li>
+			</ul>
+			<p class="text-bold">Місця праці бакалаврів:</p>
+			<ul>
+				<li>Місце праці 1</li>
+				<li>Місце праці 2</li>
+				<li>Місце праці 3</li>
+			</ul>
+			<h4 class="text-center">Познайомитись з кафедрою <span class="text-bold text-italic">ЕКМ</span> ви можете <a href="departments/ekm.php" class="text-bold text-aqua">тут</a>.</h4>
 		</div>
 	</section>
-
-	<!-- FOOTER -->
+	
+	<!-- Footer -->
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>

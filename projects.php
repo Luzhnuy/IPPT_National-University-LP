@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IPPT - gallery album</title>
+	<title>IPPT - Projects page</title>
 
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -13,16 +13,13 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
-	<!-- Fancybox -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
-
 	<!-- My styles -->
 	<link rel="stylesheet" href="sources/css/style.css">
 	<link rel="stylesheet" href="sources/css/animate.css">
 	<link rel="stylesheet" href="sources/css/responsive.css">
 </head>
 <body>
-	<!-- PRELOADER -->
+	<!-- Preloader -->
 	<div id="preloader">
 		<div class="preload-img">
 			<img class="preload-logo" src="sources/img/logo.png" alt="logo">
@@ -37,7 +34,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -72,19 +69,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="entrant.html">Вступнику</a>
+									<a class="nav-link" href="entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.html">Студенту</a>
+									<a class="nav-link" href="student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.html">Випускнику</a>
+									<a class="nav-link" href="graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="news-archive.html">Новини</a>
+									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -102,85 +99,88 @@
 		</div>
 	</header>
 
-	<!-- GALLERY PAGE -->
-	<div id="gallery-page" class="gallery-page">
+	<section id="projects-page" class="projects-page">
 		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.php">Головна</a></li>
+				<li class="breadcrumb-item"><a href="about-us.php">Про інститут</a></li>
+				<li class="breadcrumb-item active">Проекти</li>
+			</ol>
+
 			<div class="row">
-				<div class="col-12">
-					<ol class="breadcrumb">
-					  <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-					  <li class="breadcrumb-item"><a href="about-us.html">Про інститут</a></li>
-					  <li class="breadcrumb-item"><a href="news-archive.html">Галерея</a></li>
-					  <li class="breadcrumb-item active">Lorem ipsum</li>
-					</ol>
-				</div>
-				<div class="col-12 col-lg-3">
-					<div class="gallery-navbar">
-						<ul>
-							<li><a href="#allnews" class="active">Всі альбоми</a></li>
-							<li><a href="#advertisement">Оголошення</a></li>
-							<li><a href="#events">Події</a></li>
-							<li><a href="#news-of-chairs">Новини кафедр</a></li>
-							<li><a href="#student-college">Двіж студ. колегії</a></li>
-							<li><a href="#sport-life">Спортивне життя</a></li>
-							<li><a href="#news-from-world">Новини в світі</a></li>
-						</ul>
+				<div class="col-12 col-lg-6">
+					<div class="ippt-projects">
+						<h2 class="text-center text-blue">Проекти наших викладачів</h2>
+						<div id="ipptProjectsAccordion" class="ipptProjectsAccordion" data-children=".item">
+						  <div class="item">
+						    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject1" aria-expanded="true" aria-controls="ipptProject1">Проект 1</a>
+						    <div id="ipptProject1" class="collapse" role="tabpanel">
+						      <p class="mb-3">
+						        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+						      </p>
+						    </div>
+						  </div>
+						  <div class="item">
+						    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject2" aria-expanded="false" aria-controls="ipptProject2">Проект 2</a>
+						    <div id="ipptProject2" class="collapse show" role="tabpanel">
+						      <p class="mb-3">
+						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						      </p>
+						    </div>
+						  </div>
+						  <div class="item">
+						    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject3" aria-expanded="false" aria-controls="ipptProject3">Проект 2</a>
+						    <div id="ipptProject3" class="collapse show" role="tabpanel">
+						      <p class="mb-3">
+						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						      </p>
+						    </div>
+						  </div>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-9">
-					<div class="gallery-section">
-						<h2>Lorem Ipsum</h2>
-						<div class="row">
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_183222222.jpg">
-											<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_4786.jpg">
-											<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_4717.jpg">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_4805.jpg">
-											<img src="sources/img/news/IMG_4805.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
+				<div class="col-12 col-lg-6">
+					<div class="students-projects">
+						<h2 class="text-center text-blue">Проекти наших студентів</h2>
+						<div id="studProjectsAccordion" class="studProjectsAccordion" data-children=".item">
+						  <div class="item">
+						    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject1" aria-expanded="true" aria-controls="studProject1">Проект 1</a>
+						    <div id="studProject1" class="collapse" role="tabpanel">
+						      <p class="mb-3">
+						        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+						      </p>
+						    </div>
+						  </div>
+						  <div class="item">
+						    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject2" aria-expanded="false" aria-controls="studProject2">Проект 2</a>
+						    <div id="studProject2" class="collapse show" role="tabpanel">
+						      <p class="mb-3">
+						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						      </p>
+						    </div>
+						  </div>
+						  <div class="item">
+						    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject3" aria-expanded="false" aria-controls="studProject3">Проект 2</a>
+						    <div id="studProject3" class="collapse show" role="tabpanel">
+						      <p class="mb-3">
+						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						      </p>
+						    </div>
+						  </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
+	</section>
+
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>
@@ -211,9 +211,6 @@
 	<!-- Bootstrap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-	<!-- Fancybox -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
 	<!-- My scripts -->
 	<script src="sources/js/script.js"></script>
