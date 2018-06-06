@@ -202,7 +202,7 @@
 									           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
 									            </div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 1</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 1</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -214,7 +214,7 @@
 									           		<img src="sources/img/news/IMG_4805.jpg" alt="board-news-img-2">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 2</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 2</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat ad vitae.</p>
 									           	</div>
@@ -226,7 +226,7 @@
 									           		<img src="sources/img/news/IMG_4752.jpg" alt="board-news-img-3">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 3</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 3</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam.</p>
 									           	</div>
@@ -242,7 +242,7 @@
 									           		<img src="sources/img/news/IMG_4717.jpg" alt="board-news-img-1">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 4</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 4</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -254,7 +254,7 @@
 									           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 5</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 5</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -266,7 +266,7 @@
 									           		<img src="sources/img/news/IMG_4786.jpg" alt="board-news-img-1">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 6</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 6</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -282,7 +282,7 @@
 									           		<img src="sources/img/news/IMG_4865.jpg" alt="board-news-img-1">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 7</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 7</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -294,7 +294,7 @@
 									           		<img src="sources/img/news/IMG_4690.jpg" alt="board-news-img-1">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 8</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 8</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -306,7 +306,7 @@
 									           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
 									           	</div>
 									           	<div class="board-news-text">
-									           		<h3><a href="news.html" class="text-white">News 9</a></h3>
+									           		<h3><a href="news.php" class="text-white">News 9</a></h3>
 													<h5 class="text-aqua">17.08.2017, 8:45</h5>
 									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 									           	</div>
@@ -337,7 +337,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -355,7 +355,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -373,7 +373,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -391,7 +391,7 @@
 								</div>
 								<div class="col-12 col-lg-7">
 									<div class="news-card-text">
-										<h3><a href="news.html" class="text-white">Lorem Ipsum</a></h3>
+										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
 										<h5 class="text-aqua">18.08.2017, 8.45</h5>
 										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 									</div>
@@ -401,7 +401,7 @@
 					</div>
 				</div>
 				<div class="add-enother-news">
-					<a href="news-archive.html" class="btn btn-aqua">Переглянути більше</a>
+					<a href="news-archive.php" class="btn btn-aqua">Переглянути більше</a>
 				</div>
 			</div>
 		</div>
@@ -413,7 +413,7 @@
 					<div class="col-12 col-lg-5">
 						<div class="diploma-text">
 							<h3 class="text-blue">Ми пишаємось <br> перемогами <br> наших <br> студентів!</h3>
-							<a href="projects.html" class="btn btn-aqua">Читати більше</a>
+							<a href="projects.php" class="btn btn-aqua">Читати більше</a>
 						</div>
 					</div>
 					<div class="col-12 col-lg-7">
