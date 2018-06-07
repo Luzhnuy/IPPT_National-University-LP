@@ -1,3 +1,10 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+	
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
