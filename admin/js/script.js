@@ -7,11 +7,11 @@ $(document).ready(function(){
 		obj['password'] = password;
 
 		$.ajax({
-			type: 'POST',
-			url: 'app/signin.php',
+			method: 'POST',
+			url: '/ippt-website/admin/app/signin.php',
 			data:  obj,
 			success:function(data){
-				if(data = "excelent"){
+				if (data = "excelent"){
 					window.location.href = "/ippt-website/admin/main.php";
 				} else {
 					alert(data);
