@@ -15,7 +15,8 @@
 				if($login == $u['username']){
 					if($pass == $u['pass']){
 						$_SESSION['user'] = $u;
-						header('location:main.php');
+						// header('location:main.php');
+						echo "excelent";
 					} else {
 						echo "Неправильний пароль";
 					}
