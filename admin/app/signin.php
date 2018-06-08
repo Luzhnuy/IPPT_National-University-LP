@@ -5,33 +5,33 @@
 	$users = R::getAll('SELECT * FROM users');
 
 	// echo "hello";
-	
+
 	if($_POST){
 		$login = $_POST['login'];
 		$pass = $_POST['password'];
-		
+
 		if($login and $pass ){
 			foreach ($users as $u ) {
 				if($login == $u['username']){
 					if($pass == $u['pass']){
 						$_SESSION['user'] = $u;
-						// header('location:main.php');
-						echo "excelent";
+					    header('location:../main.php');
+						
 					} else {
-						echo "Неправильний пароль";
+						header('location:../index.php');
 					}
 				} else {
-					echo "Неправильний логін";
+					header('location:../index.php');
 				}
 			}
 
 			
 
 		} else {
-			echo "Ви незаповниле одне з полів";
+			header("location:../index.php");
 		}
 	} else {
-		echo "acces denied";
+		header('location:../index.php');
 	}
 
 

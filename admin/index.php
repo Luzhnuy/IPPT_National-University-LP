@@ -15,7 +15,7 @@
 
 
 
-  <form class="login">
+  <form class="login" method="POST" action="app/signin.php">
     <p>
       <label for="login">Логин:</label>
       <input type="text" name="login" id="login" >
