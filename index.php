@@ -1,10 +1,3 @@
-<?php 
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
-	
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -12,10 +5,10 @@
 	<title>IPPT - main page</title>
 
 	<!-- Normalize css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
@@ -24,9 +17,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="sources/css/style.css">
-	<link rel="stylesheet" href="sources/css/animate.css">
-	<link rel="stylesheet" href="sources/css/responsive.css">
+	<link rel="stylesheet" href="sources/css/style.min.css">
+	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- Preloader -->
@@ -123,7 +116,7 @@
 			</div>
 			<div class="hot-news hot-news-3">
 				<span><i class="fa fa-list-alt large" aria-hidden="true"></i></span>
-				<a class="hide-text" href="student.html">Розклад</a>
+				<a class="hide-text" href="student.php">Розклад</a>
 			</div>
 			<div id="newsSlider" class="carousel slide news-slider" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -164,7 +157,7 @@
 				<i class="icons icons-white fa fa-smile-o" aria-hidden="true"></i>
 				<h3 class="text-white">Студентська Kолегія</h3>
 				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
-				<a href="student-college.php" class="btn btn-blue" target="_blank">Читати більше</a>
+				<a href="student_college/student-college.php" class="btn btn-blue" target="_blank">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-object-group" aria-hidden="true"></i>
@@ -191,7 +184,7 @@
 					<div class="left-side col-12 col-lg-3">
 						<hr size="1" width="100" color="#333" align="left">
 						<h2>Дошка оголошень</h2>
-						<p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic repellendus placeat, ipsum quo voluptatem numquam?</p>
+						<p class="text-grey">В нашому інституті кожного місяця відбуваються різні цікаві події. Дізнатись про них можна переглянувши дану дошку оголошень. <!--Це дасть вам змогу не пропустити нічого цікавого.--></p>
 						<ol class="carousel-indicators" data-target="#boardCarousel">
 							<li data-target="#boardCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#boardCarousel" data-slide-to="1"></li>
@@ -204,120 +197,138 @@
 							    <div class="carousel-item active">
 							    	<div class="row no-gutters">
 							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-									            </div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 1</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
 							    		</div>
 							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4805.jpg" alt="board-news-img-2">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 2</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat ad vitae.</p>
-									           	</div>
-									        </div>
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
 							    		</div>
 							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									          	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4752.jpg" alt="board-news-img-3">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 3</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam.</p>
-									           	</div>
-									        </div>
-							    		</div>
-							    	</div>
-							    </div>
-							    <div class="carousel-item">
-							    	<div class="row no-gutters">
-							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4717.jpg" alt="board-news-img-1">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 4</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 5</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4786.jpg" alt="board-news-img-1">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 6</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
 							    		</div>
 							    	</div>
 							    </div>
 							    <div class="carousel-item">
 							    	<div class="row no-gutters">
 							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									            <div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4865.jpg" alt="board-news-img-1">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 7</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
 							    		</div>
 							    		<div class="col-12 col-md-4">
-							    			<div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4690.jpg" alt="board-news-img-1">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 8</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
 							    		</div>
 							    		<div class="col-12 col-md-4">
-							    			 <div class="board-news board-news-info">
-									           	<div class="board-news-img img">
-									           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-									           	</div>
-									           	<div class="board-news-text">
-									           		<h3><a href="news.php" class="text-white">News 9</a></h3>
-													<h5 class="text-aqua">17.08.2017, 8:45</h5>
-									           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-									           	</div>
-									        </div>
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							    	<div class="row no-gutters">
+							    		<div class="col-12 col-md-4">
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    		<div class="col-12 col-md-4">
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    		<div class="col-12 col-md-4">
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
 							    		</div>
 							    	</div>
 							    </div>
@@ -335,76 +346,84 @@
 
 				<div class="row no-gutters">
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="news.php" >
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3 class="text-white">Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="news.php" >
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3 class="text-white">Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="news.php" >
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3 class="text-white">Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="news.php" >
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3 class="text-white">Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 				<div class="add-enother-news">
@@ -556,7 +575,7 @@
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>
@@ -581,18 +600,17 @@
 		</div>
 	</footer>
 
-
 	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="sources/js/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
+	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 	<!-- Fancybox -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
 	<!-- My scripts -->
-	<script src="sources/js/script.js"></script>
+	<script src="sources/js/script.min.js"></script>
 </body>
 </html>

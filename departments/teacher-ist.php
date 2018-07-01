@@ -30,7 +30,7 @@
 	<header id="header-dep" class="header-dep">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light">  
 		<div class="container">
-			<a class="navbar-brand text-blue" href="ist.html">Кафедра ІСТ</a>
+			<a class="navbar-brand text-blue" href="ist.php">Кафедра ІСТ</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -38,22 +38,22 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto col justify-content-end">
 			      <li class="nav-item">
-			        <a class="nav-link" href="ist.html#about-department">Про нас</a>
+			        <a class="nav-link" href="ist.php#about-department">Про нас</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="ist.html#education">Освітні програми</a>
+			        <a class="nav-link" href="ist.php#education">Освітні програми</a>
 			      </li>
 			      <li class="nav-item active">
-			        <a class="nav-link" href="ist.html#teachers">Працівники</a>
+			        <a class="nav-link" href="ist.php#teachers">Працівники</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="ist.html#science">Наукова діяльність</a>
+			        <a class="nav-link" href="ist.php#science">Наукова діяльність</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="ist.html#ist-stud-proj">Проекти</a>
+			        <a class="nav-link" href="ist.php#ist-stud-proj">Проекти</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="ist.html#partners">Партнери</a>
+			        <a class="nav-link" href="ist.php#partners">Партнери</a>
 			      </li>
 			    </ul>
 			  </div>

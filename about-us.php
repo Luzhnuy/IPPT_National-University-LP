@@ -5,18 +5,18 @@
 	<title>IPPT - About us page</title>
 
 	<!-- Normalize css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="sources/css/style.css">
-	<link rel="stylesheet" href="sources/css/animate.css">
-	<link rel="stylesheet" href="sources/css/responsive.css">
+	<link rel="stylesheet" href="sources/css/style.min.css">
+	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- Preloader -->
@@ -247,7 +247,7 @@
 								    	<br>
 								    	E-mail: <span>IST.dept@lpnu.ua</span>, <span>kist.ippt@gmail.com</span>
 								    	<br>
-								    	Web-сайт: <span><a href="departments/ist.php" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/ist.html</a></span>
+								    	Web-сайт: <span><a href="departments/ist/ist.php" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/ist.php</a></span>
 								    </p>
 								</div>
 								<div class="the-department-card">
@@ -261,7 +261,7 @@
 								    	<br>
 								    	E-mail: <span>EKM.dept@lpnu.ua</span>
 								    	<br>
-								    	Web-сайт: <span><a href="departments/ekm.php" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/ekm.html</a></span>
+								    	Web-сайт: <span><a href="departments/ekm/ekm.php" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/ekm.php</a></span>
 								    </p>
 								</div>
 								<div class="the-department-card">
@@ -275,7 +275,7 @@
 								    	<br>
 								    	E-mail: <span>FOA.dept@lpnu.ua</span>
 								    	<br>
-								    	Web-сайт: <span><a href="departments/foa.php" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/foa.html</a></span>
+								    	Web-сайт: <span><a href="departments/foa/foa.php" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/foa.php</a></span>
 								    </p>
 								</div>
 							</div>
@@ -574,11 +574,11 @@
 								<p>Економіка України <a href="www.economukraine.com.ua" class="text-aqua">www.economukraine.com.ua</a></p>
 								<p>Статистика України <a href="Ntkstat.com.ua" class="text-aqua">Ntkstat.com.ua</a></p>
 								<p>Регіональна економіка <a href=" www.irr.org.ua/pe/" class="text-aqua"> www.irr.org.ua/pe/</a></p>
-								<p>Економіка, фінанси, право <a href="www.nbuv.gov.ua/Soc_Gum/Efp/intex.html" class="text-aqua">www.nbuv.gov.ua/Soc_Gum/Efp/intex.html</a></p>
+								<p>Економіка, фінанси, право <a href="www.nbuv.gov.ua/Soc_Gum/Efp/intex.php" class="text-aqua">www.nbuv.gov.ua/Soc_Gum/Efp/intex.php</a></p>
 								<p>Бюджетна бухгалтерія <a href="www.factor.ua" class="text-aqua">www.factor.ua</a></p>
 								<p>Страхова справа <a href="Forinsurer.com/sprava" class="text-aqua">Forinsurer.com/sprava</a></p>
 								<p>Бухгалтерський облік і аудит <a href="www.nbuv.gov.ua/prtal/Soc_Gum/boia" class="text-aqua">www.nbuv.gov.ua/prtal/Soc_Gum/boia</a></p>
-								<p>Маркетинг в Україні <a href="www.nbuv.gov.ua/portal/soc_gum/mvu/intex.html" class="text-aqua">www.nbuv.gov.ua/portal/soc_gum/mvu/intex.html</a></p>
+								<p>Маркетинг в Україні <a href="www.nbuv.gov.ua/portal/soc_gum/mvu/intex.php" class="text-aqua">www.nbuv.gov.ua/portal/soc_gum/mvu/intex.php</a></p>
 								<p>Маркетинг и реклама <a href="www.mr.com.ua/" class="text-aqua">www.mr.com.ua/</a></p>
 								<p>Фінансовий контроль <a href="www.dkrs.gov.ua" class="text-aqua">www.dkrs.gov.ua</a></p>
 								<p>Все про бухгалтерський облік <a href="www.vodi.com.ua" class="text-aqua">www.vodi.com.ua</a></p>
@@ -643,15 +643,15 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="sources/js/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
+	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 	<!-- My scripts -->
-	<script src="sources/js/script.js"></script>
+	<script src="sources/js/script.min.js"></script>
 </body>
 </html>

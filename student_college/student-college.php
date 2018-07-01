@@ -5,24 +5,25 @@
 	<title>IPPT - Student's College</title>
 
 	<!-- Normalize css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="../sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="../sources/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="sources/css/student-college.css">
-	<link rel="stylesheet" href="sources/css/animate.css">
-	<link rel="stylesheet" href="sources/css/responsive.css">
+	<!-- <link rel="stylesheet" href="../sources/css/style.min.css"> -->
+	<!-- <link rel="stylesheet" href="../sources/css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="../sources/css/responsive.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="student-college.css">
 </head>
 <body data-spy="scroll" data-target=".navbar-scroll" data-offset="50" id="body">
 	<!-- Preloader -->
 	<div id="preloader">
 		<div class="preload-img">
-			<img class="preload-logo" src="sources/img/logo.png" alt="logo">
+			<img class="preload-logo" src="../sources/img/logo.png" alt="logo">
 		</div>
 	</div>
 
@@ -60,7 +61,7 @@
 
 	<div class="bg-csi-img">
 		<div class="csi-logo">
-			<img src="sources/img/student-college/stud-col-logo.png" alt="stud-col-logo">
+			<img src="../sources/img/student-college/stud-col-logo.png" alt="stud-col-logo">
 		</div>
 		<div class="csi-motto">
 			<p class="text-blue text-bold">
@@ -124,7 +125,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/roman.jpg" alt="csi-member-img">
+									<img src="../sources/img/student-college/members/roman.jpg" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Цудний Роман</h3>
@@ -144,7 +145,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/angelina.jpg">
+									<img src="../sources/img/student-college/members/angelina.jpg">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Сорочик Ангеліна</h3>
@@ -163,7 +164,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/yuri.jpg" alt="csi-member-img">
+									<img src="../sources/img/student-college/members/yuri.jpg" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Присташ Юрій</h3>
@@ -182,7 +183,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/nazar.jpg" alt="csi-member-img">
+									<img src="../sources/img/student-college/members/nazar.jpg" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Шутяк Назар</h3>
@@ -201,7 +202,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/eugene.png" alt="csi-member-img">
+									<img src="../sources/img/student-college/members/eugene.png" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Задерей Євген</h3>
@@ -220,7 +221,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/marta.png" alt="csi-member-img">
+									<img src="../sources/img/student-college/members/marta.png" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Гриник Марта</h3>
@@ -239,7 +240,7 @@
 						<div class="col-lg-3">
 							<div class="csi-member-card">
 								<div class="csi-member-img img">
-									<img src="sources/img/student-college/members/nastya.jpg" alt="csi-member-img">
+									<img src="../sources/img/student-college/members/nastya.jpg" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
 									<h3 class="text-white text-center">Василенко Анастасія</h3>
@@ -390,7 +391,7 @@
 							<div class="row no-gutters">
 								<div class="col-12 col-lg-5">
 									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
 									</div>
 								</div>
 								<div class="col-12 col-lg-7">
@@ -408,7 +409,7 @@
 							<div class="row no-gutters">
 								<div class="col-12 col-lg-5">
 									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
 									</div>
 								</div>
 								<div class="col-12 col-lg-7">
@@ -426,7 +427,7 @@
 							<div class="row no-gutters">
 								<div class="col-12 col-lg-5">
 									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
 									</div>
 								</div>
 								<div class="col-12 col-lg-7">
@@ -444,7 +445,7 @@
 							<div class="row no-gutters">
 								<div class="col-12 col-lg-5">
 									<div class="news-card-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news">
+										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
 									</div>
 								</div>
 								<div class="col-12 col-lg-7">
@@ -473,26 +474,25 @@
 				Адреса: м. Львів, вул. Горбачевського, 18, каб.: 001 <br>
 				E-mail: ksi.ippt@gmail.com <br>
 				Тел: (093) 274-48-06 <br>
-				<a href="https://www.facebook.com/ksiippt/" class="text-aqua text-white-hover"><img src="sources/img/contacts/facebook.svg" alt="facebook-icon"></a>
-				<a href="https://www.instagram.com/ksi_ippt/" class="text-aqua text-white-hover"><img src="sources/img/contacts/instagram.svg" alt="instagram-icon"></a>
+				<a href="https://www.facebook.com/ksiippt/" class="text-aqua text-white-hover"><img src="../sources/img/contacts/facebook.svg" alt="facebook-icon"></a>
+				<a href="https://www.instagram.com/ksi_ippt/" class="text-aqua text-white-hover"><img src="../sources/img/contacts/instagram.svg" alt="instagram-icon"></a>
 			</p>
 		</div>
 		<div class="contacts-img">
 			<div class="img">
-				<img src="sources/img/student-college/stud-col-all.jpg" alt="footer-img">
+				<img src="../sources/img/student-college/stud-col-all.jpg" alt="footer-img">
 			</div>
 		</div>
 	</footer>
-	
 
 	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../sources/js/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script src="../sources/js/popper.min.js" crossorigin="anonymous"></script>
+	<script src="../sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 	<!-- My scripts -->
-	<script src="sources/js/student-college.js"></script>
+	<script src="student-college.js"></script>
 </body>
 </html>

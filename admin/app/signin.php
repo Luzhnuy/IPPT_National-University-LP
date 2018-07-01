@@ -6,7 +6,7 @@
 
 	// echo "hello";
 
-	if($_POST){
+
 		$login = $_POST['login'];
 		$pass = $_POST['password'];
 
@@ -30,9 +30,6 @@
 		} else {
 			header("location:../index.php");
 		}
-	} else {
-		header('location:../index.php');
-	}
 
 
 ?>

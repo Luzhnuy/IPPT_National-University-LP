@@ -5,18 +5,18 @@
 	<title>IPPT - Projects page</title>
 
 	<!-- Normalize css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="sources/css/style.css">
-	<link rel="stylesheet" href="sources/css/animate.css">
-	<link rel="stylesheet" href="sources/css/responsive.css">
+	<link rel="stylesheet" href="sources/css/style.min.css">
+	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- Preloader -->
@@ -204,15 +204,15 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="sources/js/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
+	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 	<!-- My scripts -->
-	<script src="sources/js/script.js"></script>
+	<script src="sources/js/script.min.js"></script>
 </body>
 </html>

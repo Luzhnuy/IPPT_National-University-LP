@@ -34,7 +34,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.html"></a>
+								<a href="index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -69,19 +69,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="../index.html">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="../index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="../entrant.html">Вступнику</a>
+									<a class="nav-link" href="../entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="../student.html">Студенту</a>
+									<a class="nav-link" href="../student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="../graduate.html">Випускнику</a>
+									<a class="nav-link" href="../graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="../news-archive.html">Новини</a>
+									<a class="nav-link" href="../news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
@@ -102,10 +102,10 @@
 	<section id="foa-department" class="foa-department">
 		<div class="container">	
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="../index.html">Головна</a></li>
-				<li class="breadcrumb-item"><a href="../about-us.html">Про інститут</a></li>
-				<li class="breadcrumb-item"><a href="../about-us.html">Кафедри</a></li>
-				<li class="breadcrumb-item"><a href="foa.html">Кафедра ФОА</a></li>
+				<li class="breadcrumb-item"><a href="../index.php">Головна</a></li>
+				<li class="breadcrumb-item"><a href="../about-us.php">Про інститут</a></li>
+				<li class="breadcrumb-item"><a href="../about-us.php">Кафедри</a></li>
+				<li class="breadcrumb-item"><a href="foa.php">Кафедра ФОА</a></li>
 				<li class="breadcrumb-item active get-text">Про кафедру</li>
 			</ol>
 
@@ -319,7 +319,7 @@
 			<div class="row no-gutters">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="../sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>
