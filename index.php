@@ -4,11 +4,16 @@
 	<meta charset="UTF-8">
 	<title>IPPT - main page</title>
 
+
+	<link rel="icon" href="/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="sources/img/logo.png" type="image/x-icon">
+
+
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
@@ -18,8 +23,6 @@
 
 	<!-- My styles -->
 	<link rel="stylesheet" href="sources/css/style.min.css">
-	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
-	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- Preloader -->
@@ -144,25 +147,21 @@
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-university" aria-hidden="true"></i>
 				<h3 class="text-white">Про інститут</h3>
-				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
 				<a href="about-us.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-graduation-cap" aria-hidden="true"></i>
 				<h3 class="text-white">Освіта та Наука</h3>
-				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
 				<a href="education-science.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-smile-o" aria-hidden="true"></i>
 				<h3 class="text-white">Студентська Kолегія</h3>
-				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
 				<a href="student_college/student-college.php" class="btn btn-blue" target="_blank">Читати більше</a>
 			</div>
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-object-group" aria-hidden="true"></i>
 				<h3 class="text-white">Галерея</h3>
-				<h4 class="text-white">Lorem ipsum dolore sit emet.</h4>
 				<a href="gallery.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			</div>
@@ -173,7 +172,7 @@
 			<div class="container">
 				<h1>Вступна кампанія 2018</h1>
 				<p>Умови вступу у вищий навчальний заклад уже тут!</p>
-				<a href="entrant.php" class="btn btn-aqua">Читати більше</a>
+				<a href="entrant.php" class="btn btn-green">Читати більше</a>
 			</div>
 		</div>
 
@@ -184,7 +183,6 @@
 					<div class="left-side col-12 col-lg-3">
 						<hr size="1" width="100" color="#333" align="left">
 						<h2>Дошка оголошень</h2>
-						<p class="text-grey">В нашому інституті кожного місяця відбуваються різні цікаві події. Дізнатись про них можна переглянувши дану дошку оголошень. <!--Це дасть вам змогу не пропустити нічого цікавого.--></p>
 						<ol class="carousel-indicators" data-target="#boardCarousel">
 							<li data-target="#boardCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#boardCarousel" data-slide-to="1"></li>
@@ -204,7 +202,7 @@
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
 										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 										           	</div>
 										        </div>
@@ -218,7 +216,7 @@
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
 										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 										           	</div>
 										        </div>
@@ -232,53 +230,7 @@
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
-							    	</div>
-							    </div>
-							    <div class="carousel-item">
-							    	<div class="row no-gutters">
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
 										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 										           	</div>
 										        </div>
@@ -296,7 +248,7 @@
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
 										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 										           	</div>
 										        </div>
@@ -310,7 +262,7 @@
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
 										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 										           	</div>
 										        </div>
@@ -324,7 +276,53 @@
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-aqua">17.08.2017, 8:45</h5>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							    	<div class="row no-gutters">
+							    		<div class="col-12 col-md-4">
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    		<div class="col-12 col-md-4">
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
+										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    		<div class="col-12 col-md-4">
+							    			<a href="news.php" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white">News 1</h3>
+														<h5 class="text-green">17.08.2017, 8:45</h5>
 										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
 										           	</div>
 										        </div>
@@ -357,7 +355,7 @@
 									<div class="col-12 col-lg-7">
 										<div class="news-card-text">
 											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<h5 class="text-green">18.08.2017, 8.45</h5>
 											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 										</div>
 									</div>
@@ -377,7 +375,7 @@
 									<div class="col-12 col-lg-7">
 										<div class="news-card-text">
 											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<h5 class="text-green">18.08.2017, 8.45</h5>
 											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 										</div>
 									</div>
@@ -397,7 +395,7 @@
 									<div class="col-12 col-lg-7">
 										<div class="news-card-text">
 											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<h5 class="text-green">18.08.2017, 8.45</h5>
 											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 										</div>
 									</div>
@@ -417,7 +415,7 @@
 									<div class="col-12 col-lg-7">
 										<div class="news-card-text">
 											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<h5 class="text-green">18.08.2017, 8.45</h5>
 											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 										</div>
 									</div>
@@ -427,7 +425,7 @@
 					</div>
 				</div>
 				<div class="add-enother-news">
-					<a href="news-archive.php" class="btn btn-aqua">Переглянути більше</a>
+					<a href="news-archive.php" class="btn btn-green">Переглянути більше</a>
 				</div>
 			</div>
 		</div>
@@ -439,7 +437,7 @@
 					<div class="col-12 col-lg-5">
 						<div class="diploma-text">
 							<h3 class="text-blue">Ми пишаємось <br> перемогами <br> наших <br> студентів!</h3>
-							<a href="projects.php" class="btn btn-aqua">Читати більше</a>
+							<a href="projects.php" class="btn btn-green">Читати більше</a>
 						</div>
 					</div>
 					<div class="col-12 col-lg-7">
@@ -467,7 +465,7 @@
 					    			<div class="col-12 col-md-9">
 					    				<div class="reviews-text">
 								        	<p class="text-grey">"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam repellat illum saepe, mollitia est expedita placeat fuga molestiae?</span>"</p>
-								        	<h6 class="text-aqua">Lorem Ipsum, <span>lorem ipsum</span></h6>
+								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
 								        </div>
 					    			</div>
 					    		</div>
@@ -484,7 +482,7 @@
 						    		<div class="col-12 col-md-9">
 						    			<div class="reviews-text">
 								        	<p class="text-grey">"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat distinctio voluptatum maxime maiores error earum exe.</span>"</p>
-								        	<h6 class="text-aqua">Lorem Ipsum, <span>lorem ipsum</span></h6>
+								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
 								        </div>
 						    		</div>
 						    	</div>
@@ -501,7 +499,7 @@
 					    			<div class="col-12 col-md-9">
 					    				<div class="reviews-text">
 								        	<p class="text-grey">"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nostrum, quis temporibus doloremque ullam ut, tempore odit perferendis praesentium add.</span>"</p>
-								        	<h6 class="text-aqua">Lorem Ipsum, <span>lorem ipsum</span></h6>
+								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
 								        </div>
 					    			</div>
 					    		</div>
@@ -522,7 +520,7 @@
 
 		<!-- BANERS -->
 		<div id="baners" class="baners">
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
 			        <div class="container">
@@ -531,9 +529,7 @@
 								<a href="http://lp.edu.ua/" target="_blank"><img src="sources/img/banners/6.png" alt="LvivPolytechnic"></a>
 							</div>
 							<div class="baner">
-								<a href="http://mon.gov.ua/" target="_blank"><img src="sources/img/banners/3.png" alt="MON"></a>
-								
-							</div>
+								<a href="http://mon.gov.ua/" target="_blank"><img src="sources/img/banners/3.png" alt="MON"></a>							</div>
 							<div class="baner">
 								<a href="http://city-adm.lviv.ua/" target="_blank"><img src="sources/img/banners/1.png" alt="LvivCityCouncil"></a>
 							</div>
@@ -565,14 +561,30 @@
 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    <span class="sr-only">Next</span>
 			  </a>
+			</div> -->
+			<div class="container">
+				<div class="row no-gutters justify-content-around">
+					<div class="baner">
+						<a href="http://lp.edu.ua/" target="_blank"><img src="sources/img/banners/6.png" alt="LvivPolytechnic"></a>
+					</div>
+					<div class="baner">
+						<a href="http://mon.gov.ua/" target="_blank"><img src="sources/img/banners/3.png" alt="MON"></a>
+					</div>
+					<div class="baner">
+						<a href="http://city-adm.lviv.ua/" target="_blank"><img src="sources/img/banners/1.png" alt="LvivCityCouncil"></a>
+					</div>
+					<div class="baner">
+						<a href="http://vnz.org.ua" target="_blank"><img src="sources/img/banners/2.png" alt="LvivOblAdmin"></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-
+	
 	<!-- Footer -->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="row no-gutters">
+			<div class="row no-gutters align-items-center">
 				<div class="col-2">
 					<div class="footer-logo img">
 						<a href="index.php">
@@ -582,17 +594,17 @@
 				</div>
 				<div class="col-5">
 					<div class="contact-us text-white">
-						<p>Адреса: 9044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
-						<p>Тел: (032) 258-20-27б, (032) 297-07-55 </p>
-						<p>E-mail: IPPT.dept@lpnu.ua</p>
+						<p>Адреса: 79044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
+						<p>Тел: (+38032) 297-07-55, (+38032) 258-20-27б</p>
+						<p>E-mail: IPPT.dept@lpnu.ua, dir.ippt@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-5">
 					<div class="copyright">
-						<p class="text-aqua">
+						<p class="text-white">
 							<i class="fa fa-copyright" aria-hidden="true"></i>
-							2018 Інститут Підприємництва та Перспективних Технологій.<br> Всі права застережено.<br>
-							<a class="text-aqua" href="#our-genius">Розробка та підтримка здійснюється студентами ІППТ.</a>
+							2018 Інститут підприємництва та перспективних технологій <br> НУ "Львівська політехніка"<br>
+							<a class="text-green" href="#our-genius">Розробка та підтримка здійснюється викладачами та студентами ІППТ.</a>
 						</p>
 					</div>
 				</div>
@@ -601,11 +613,11 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="sources/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 	<!-- Fancybox -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>

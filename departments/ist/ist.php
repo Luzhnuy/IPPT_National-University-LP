@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="../../sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="../../sources/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="../../sources/font-awesome/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
 	<header id="header-dep" class="header-dep">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar">  
 		<div class="container">
-			<a class="navbar-brand text-blue nav-link-scroll" href="#bg-img-ist">Кафедра ІСТ</a>
+			<a class="navbar-brand text-dark-blue nav-link-scroll" href="#bg-img-ist">Кафедра ІСТ</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -62,8 +62,8 @@
 	<!-- BACKGROUND IMG -->
 	<div id="bg-img-ist" class="bg-img-ist">
 		<h1 class="text-white">Кафедра<br>інформаційних систем<br>і технологій</h1>
-		<div class="transfotrm-diagonal-aqua"></div>
-		<div class="transfotrm-diagonal-blue"></div>
+		<div class="transfotrm-diagonal-green"></div>
+		<div class="transfotrm-diagonal-dark-blue"></div>
 	</div>
 
 	<!-- IST DEPARTMENT -->
@@ -141,8 +141,8 @@
 									<h4 class="text-white text-center">ОКР "МОЛОДШИЙ СПЕЦІАЛІСТ"</h4>
 								</div>
 								<div class="education-part-content text-center">
-									<p>За спеціальністю 122 Комп’ютерні науки <br> (5.05010101 «Обслуговування програмних систем і комплексів») <br> Кваліфікація: молодший спеціаліст з  комп’ютерних наук</p>
-									<a href="../../sources/pdf/educational_programs.pdf" class="text-aqua">Читати більше</a>
+									<p>Спеціальність 122 Комп’ютерні науки <br> (5.05010101 «Обслуговування програмних систем і комплексів») <br> Кваліфікація: молодший спеціаліст з  комп’ютерних наук</p>
+									<a href="../../sources/pdf/education_science_3.pdf" class="text-green">Читати більше</a>
 								</div>
 							</div>
 						</div>
@@ -152,8 +152,8 @@
 									<h4 class="text-white text-center">ОР "БАКАЛАВР"</h4>
 								</div>
 								<div class="education-part-content text-center">
-									<p>Першого (бакалаврського) рівня вищої освіти <br> За спеціальністю 122 Комп’ютерні науки, галузь знань 12 "Інформаційні технології" <br> Кваліфікація: бакалавр з комп’ютерних наук</p>
-									<a href="../../sources/pdf/educational_programs.pdf" class="text-aqua">Читати більше</a>
+									<p>Спеціальність 122 Комп’ютерні науки, галузь знань 12 "Інформаційні технології" <br> Кваліфікація: бакалавр з комп’ютерних наук</p>
+									<a href="../../sources/pdf/ОПП_КН_бак_17-18_01-04-18.pdf" class="text-green">Читати більше</a>
 								</div>
 							</div>
 						</div>
@@ -163,15 +163,15 @@
 									<h4 class="text-white text-center">ОР "МАГІСТР"</h4>
 								</div>
 								<div class="education-part-content text-center">
-									<p>Другого (магістерського) рівня вищої освіти <br> За спеціальністю 122 Комп’ютерні науки, галузь знань 12 "Інформаційні технології" <br> Кваліфікація: магістр з комп’ютерних наук <br> за спеціалізацією "Комп’ютерний еколого-економічний моніторинг"</p>
-									<a href="../../sources/pdf/educational_programs.pdf" class="text-aqua">Читати більше</a>
+									<p>Спеціальність: 122 Комп’ютерні науки, галузь знань 12 "Інформаційні технології" <br> Кваліфікація: магістр з комп’ютерних наук <br> за спеціалізацією "Комп’ютерний еколого-економічний моніторинг"</p>
+									<a href="../../sources/pdf/ОПП_компютерний_еколого-економiчний_монiторинг_м_1.12._2016.pdf" class="text-green">Читати більше</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="aqua-bg"></div>
+			<div class="green-bg"></div>
 		</div>
 
 		<div id="teachers" class="teachers">
@@ -180,92 +180,92 @@
 				<div class="row">
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Теслюк Василь Миколайович </a></h4>
-							<h6 class="text-aqua">завідувач кафедри, д.т.н., професор</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Теслюк Василь Миколайович </a></h4>
+							<h6 class="text-green">завідувач кафедри, д.т.н., професор</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Слюсарчук Юрій Миколайович  </a></h4>
-							<h6 class="text-aqua">доцент кафедри, к.ф.-м.н., доцент</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Слюсарчук Юрій Миколайович  </a></h4>
+							<h6 class="text-green">доцент кафедри, к.ф.-м.н., доцент</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Ємець Володимир Федорович </a></h4>
-							<h6 class="text-aqua">професор кафедри, д.ф.-м.н., професор</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Ємець Володимир Федорович </a></h4>
+							<h6 class="text-green">професор кафедри, д.ф.-м.н., професор</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Процько Ігор Омелянович </a></h4>
-							<h6 class="text-aqua">доцент кафедри, к.т.н., доцент</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Процько Ігор Омелянович </a></h4>
+							<h6 class="text-green">доцент кафедри, к.т.н., доцент</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Машевська Марта Володимирівна </a></h4>
-							<h6 class="text-aqua">старший викладач кафедри, к.т.н.</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Машевська Марта Володимирівна </a></h4>
+							<h6 class="text-green">старший викладач кафедри, к.т.н.</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Баран Мар'яна Михайлівна  </a></h4>
-							<h6 class="text-aqua">доцент кафедри, к.ф.-м.н., доцент</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Баран Мар'яна Михайлівна  </a></h4>
+							<h6 class="text-green">доцент кафедри, к.ф.-м.н., доцент</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Зелінський Андрій Ярославович </a></h4>
-							<h6 class="text-aqua">старший викладач кафедри, к.т.н.</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Зелінський Андрій Ярославович </a></h4>
+							<h6 class="text-green">старший викладач кафедри, к.т.н.</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Угрин Леся Євгенівна </a></h4>
-							<h6 class="text-aqua">старший викладач кафедри</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Угрин Леся Євгенівна </a></h4>
+							<h6 class="text-green">старший викладач кафедри</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Борейко Олег Юрійович </a></h4>
-							<h6 class="text-aqua">асистент кафедри, к.т.н.</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Борейко Олег Юрійович </a></h4>
+							<h6 class="text-green">асистент кафедри, к.т.н.</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Щербак Ілона Миколаївна </a></h4>
-							<h6 class="text-aqua">старший викладач кафедри, к.т.н.</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Щербак Ілона Миколаївна </a></h4>
+							<h6 class="text-green">старший викладач кафедри, к.т.н.</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Лиса Наталія Корнеліївна </a></h4>
-							<h6 class="text-aqua">асистент кафедри, к.т.н.</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Лиса Наталія Корнеліївна </a></h4>
+							<h6 class="text-green">асистент кафедри, к.т.н.</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Навитка Марія Любомирівна </a></h4>
-							<h6 class="text-aqua">старший викладач кафедри</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Навитка Марія Любомирівна </a></h4>
+							<h6 class="text-green">старший викладач кафедри</h6>
 							<hr>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ist.php">Максим'юк Катерина Вікторівна </a></h4>
-							<h6 class="text-aqua">асистент кафедри</h6>
+							<h4 class="text-dark-blue"><a href="teacher-ist.php">Максим'юк Катерина Вікторівна </a></h4>
+							<h6 class="text-green">асистент кафедри</h6>
 							<hr>
 						</div>
 					</div>
@@ -307,63 +307,67 @@
 								<h4 class="text-center">Публікації</h4>
 								<hr>
 								<div class="publication">
-									<p><span class="text-aqua">Boreiko O., Teslyuk V., Zelinskyy A., Berezsky O. Development of models and means of the server part of the system for passenger traffic registration of public transport in the "smart" city // Східно-Європейський журнал передових технологій. – 2017. – № 1/2 (85). – P. 40–47. (SCOPUS)</p>
+									<p><span class="text-green">Boreiko O., Teslyuk V., Zelinskyy A., Berezsky O. Development of models and means of the server part of the system for passenger traffic registration of public transport in the "smart" city // Східно-Європейський журнал передових технологій. – 2017. – № 1/2 (85). – P. 40–47. (SCOPUS)</p>
 								</div>
 								<div class="publication">
-									<p><span class="text-aqua">Holovatyy A., Teslyuk V., Iwaniec M., Mashevska M. Development of a system for monitoring vibration accelerations based on the raspberry pi microcomputer and the ADXL345 accelerometer // Східно-Європейський журнал передових технологій. – 2017. – № 6. – P. 52–62. (SCOPUS)</p>
+									<p><span class="text-green">Holovatyy A., Teslyuk V., Iwaniec M., Mashevska M. Development of a system for monitoring vibration accelerations based on the raspberry pi microcomputer and the ADXL345 accelerometer // Східно-Європейський журнал передових технологій. – 2017. – № 6. – P. 52–62. (SCOPUS)</p>
 								</div>
 								<div class="more-publications">
-									<a href="#" class="btn btn-aqua">Більше публікацій</a>
+									<a href="#" class="btn btn-green">Більше публікацій</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="blue-bg"></div>
+			<div class="dark-blue-bg"></div>
 		</div>
 
 		<div id="ist-stud-proj" class="ist-stud-proj">
 			<div class="container">
-				<h2 class="text-center">Студентські досягнення</h2>
+				<h2 class="text-center">Проекти кафедри</h2>
 				<div class="row">
 					<div class="col-12 col-md-6">
-						<div class="proj-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-md-5">
-									<div class="proj-img">
-										<img src="../../sources/img/news/IMG_4752.jpg" alt="proj-img">
+						<a href="projects.php">
+							<div class="proj-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-md-5">
+										<div class="proj-img">
+											<img src="../../sources/img/news/IMG_4752.jpg" alt="proj-img">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-md-7">
-									<div class="proj-info">
-										<h3 class="text-white">Lorem Ipsum</h3>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum mollitia fuga ut atque dolorum.</p>
+									<div class="col-12 col-md-7">
+										<div class="proj-info">
+											<h3 class="text-white">Lorem Ipsum</h3>
+											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum mollitia fuga ut atque dolorum.</p> -->
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6">
-						<div class="proj-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-md-5">
-									<div class="proj-img">
-										<img src="../../sources/img/news/IMG_4731.jpg" alt="proj-img">
+						<a href="projects.php">
+							<div class="proj-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-md-5">
+										<div class="proj-img">
+											<img src="../../sources/img/news/IMG_4731.jpg" alt="proj-img">
+										</div>
 									</div>
-								</div>
-								<div class="col-md-7">
-									<div class="proj-info">
-										<h3 class="text-white">Lorem Ipsum</h3>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptate reiciendis adipisci architecto nisi dolore!</p>
+									<div class="col-md-7">
+										<div class="proj-info">
+											<h3 class="text-white">Lorem Ipsum</h3>
+											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptate reiciendis adipisci architecto nisi dolore!</p> -->
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 				<div class="more-proj">
-					<a href="#" class="btn btn-blue">Переглянути усі</a>
+					<a href="projects.php" class="btn btn-dark-blue">Переглянути усі</a>
 				</div>
 			</div>
 		</div>
@@ -402,17 +406,20 @@
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="copyright">
-				<p class="text-aqua text-center">(с) 2018 Інститут Підприємництва та Перспективних Технологій. Всі права захищено.</p>
+				<p class="text-green">
+					<i class="fa fa-copyright text-green" aria-hidden="true"></i>
+					2018 Інститут підприємництва та перспективних технологій НУ "Львівська політехніка"
+				</p>
 			</div>
 		</div>
 	</footer>
 
 	<!-- jQuery -->
-	<script src="../../sources/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="../../sources/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="../../sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 	<!-- Plugins scripts -->
 	<script src="jparticle.jquery.min.js"></script>

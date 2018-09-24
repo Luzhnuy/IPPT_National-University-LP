@@ -8,15 +8,12 @@
 	<link rel="stylesheet" href="../sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="../sources/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="../sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
-	<!-- <link rel="stylesheet" href="../sources/css/style.min.css"> -->
-	<!-- <link rel="stylesheet" href="../sources/css/animate.min.css"> -->
-	<!-- <link rel="stylesheet" href="../sources/css/responsive.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="student-college.css">
 </head>
 <body data-spy="scroll" data-target=".navbar-scroll" data-offset="50" id="body">
@@ -60,19 +57,6 @@
 	</header>
 
 	<div class="bg-csi-img">
-		<div class="csi-logo">
-			<img src="../sources/img/student-college/stud-col-logo.png" alt="stud-col-logo">
-		</div>
-		<div class="csi-motto">
-			<p class="text-blue text-bold">
-				Шановні студенти та викладачі!<br>
-				Щодня колектив Колегії студентів нашого Інституту намагається зробити студентське життя кращим та цікавішим. <br>
-				Але досягнути спільних цілей можна, лише об’єднавши наші зусилля.
-				Ми хочемо змінюватися разом з вами. Ми відкриті для ініціативи, ідей, творчого надбання, дружби.<br>
-				Тому чекаємо на ваші пропозиції, ідеї, проекти. Будемо раді бачити вас у нашій дружній команді! Отож запрошуємо всіх охочих до плідної співпраці.<br>
-				Давайте разом змінювати наше студентське життя на краще!
-			</p>
-		</div>
 		<a class="scroll-down" href="#about-csi"></a>
 		<div class="bg-pattern"></div>
 	</div>
@@ -82,38 +66,45 @@
 		<div id="about-csi" class="about-csi">
 			<div class="container">
 				<h2 class="text-blue text-center"><span>Про нас</span></h2>
-				<div class="info-about-us text-center text-blue">
-					<p>
-						Колегія студентів  є провідним органом студентського самоврядування,<br> який об’єднує на добровільних засадах студентів інституту, сприяючи створенню умов прозорості,<br> чесності та відкритості навчального процесу.
-					</p>
-					<p>
-						КСІ є ланкою між студентами та викладачами, щоб зробити їх спілкування ефективнішим,<br> дати можливість студентам донести до адміністрації університету свій погляд на навчальний процес.
-					</p>
-					<p>
-						КСІ забезпечує захист прав та інтересів студентів, їхню участь у керуванні інституту,<br> дає можливість для творчої та особистої реалізації, розвиває лідерські навички студентів.
-					</p>
-					<p>
-						Варто зазначити, що Колегія студентів представляє інтереси усієї студентської громади,<br> членом якої Ви стаєте, вступаючи до лав студентства.
-					</p>
-				</div>
-				<div class="students-polozhennya text-blue text-center">
-					<p>
-						Студентське самоврядування діє відповідно  до законодавства  України,<br> рішень спеціально уповноваженого центрального органу виконавчої влади в галузі освіти і науки,<br> Міністерства освіти і науки, молоді та спорту  України, положення про студентське самоврядування в Університеті.
-					</p>
-					<p>
-						У <a href="http://www.lp.edu.ua/sites/default/files/attach/2017/4656/students-polozhennya-2016.pdf" class="text-aqua text-bold">цьому положенні</a> вказані  основні завдання Студентського самоврядування:
-						<ul>
-							<li><span>забезпечення і захист прав та інтересів студентів, зокрема, стосовно організації навчального процесу;</span></li>
-							<li><span>забезпечення виконання студентами своїх обов'язків;</span></li>
-							<li><span>сприяння навчальній, науковій та творчій діяльності студентів;</span></li>
-							<li><span>сприяння створенню відповідних умов для проживання та відпочинку студентів;</span></li>
-							<li><span>сприяння діяльності студентських гуртків, товариств, об'єднань, клубів за інтересами;</span></li>
-							<li><span>організація співробітництва із студентами інших вищих навчальних закладів і молодіжними організаціями;</span></li>
-							<li><span>сприяння працевлаштуванню випускників;</span></li>
-							<li><span>участь у вирішенні питань міжнародного обміну студентами.</span></li>
-						</ul>
-					</p>
-				</div>
+				
+					<div class="row no-gutters">
+						<div class="col-12 col-md-6">
+							<div class="info-about-us text-blue">
+								<p>
+									Колегія студентів  є провідним органом студентського самоврядування,<br> який об’єднує на добровільних засадах студентів інституту, сприяючи створенню умов прозорості,<br> чесності та відкритості навчального процесу.
+								</p>
+								<p>
+									КСІ є ланкою між студентами та викладачами, щоб зробити їх спілкування ефективнішим,<br> дати можливість студентам донести до адміністрації університету свій погляд на навчальний процес.
+								</p>
+								<p>
+									КСІ забезпечує захист прав та інтересів студентів, їхню участь у керуванні інституту,<br> дає можливість для творчої та особистої реалізації, розвиває лідерські навички студентів.
+								</p>
+								<p>
+									Варто зазначити, що Колегія студентів представляє інтереси усієї студентської громади,<br> членом якої Ви стаєте, вступаючи до лав студентства.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="students-polozhennya text-blue">
+								<p>
+									Студентське самоврядування діє відповідно  до законодавства  України,<br> рішень спеціально уповноваженого центрального органу виконавчої влади в галузі освіти і науки,<br> Міністерства освіти і науки, молоді та спорту  України, положення про студентське самоврядування в Університеті.
+								</p>
+								<p>
+									У <a href="http://www.lp.edu.ua/sites/default/files/attach/2017/4656/students-polozhennya-2016.pdf" class="text-aqua text-bold">цьому положенні</a> вказані  основні завдання Студентського самоврядування:
+									<ul>
+										<li><span>забезпечення і захист прав та інтересів студентів, зокрема, стосовно організації навчального процесу;</span></li>
+										<li><span>забезпечення виконання студентами своїх обов'язків;</span></li>
+										<li><span>сприяння навчальній, науковій та творчій діяльності студентів;</span></li>
+										<li><span>сприяння створенню відповідних умов для проживання та відпочинку студентів;</span></li>
+										<li><span>сприяння діяльності студентських гуртків, товариств, об'єднань, клубів за інтересами;</span></li>
+										<li><span>організація співробітництва із студентами інших вищих навчальних закладів і молодіжними організаціями;</span></li>
+										<li><span>сприяння працевлаштуванню випускників;</span></li>
+										<li><span>участь у вирішенні питань міжнародного обміну студентами.</span></li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 
@@ -128,7 +119,7 @@
 									<img src="../sources/img/student-college/members/roman.jpg" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
-									<h3 class="text-white text-center">Цудний Роман</h3>
+									<h3 class="text-white text-center">Цудний <br> Роман</h3>
 									<h5 class="text-blue text-center">Голова Колегії студентів</h5>
 								</div>
 								<div class="csi-member-info">
@@ -137,120 +128,6 @@
 										<span class="text-bold">Тел:</span><br>  (093) 274-48-06<br>
 										<span class="text-bold">E-mail:</span><br> rtsudny@gmail.com<br>
 										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/rtsudny" class="text-aqua text-white-hover">facebook.com/rtsudny</a>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3">
-							<div class="csi-member-card">
-								<div class="csi-member-img img">
-									<img src="../sources/img/student-college/members/angelina.jpg">
-								</div>
-								<div class="csi-member-name">
-									<h3 class="text-white text-center">Сорочик Ангеліна</h3>
-									<h5 class="text-blue text-center"><!--Заступник Колегії Студентів,<br>--> Голова Навчально-наукового відділу</h5>
-								</div>
-								<div class="csi-member-info">
-									<h4 class="text-white">Контактна інформація:</h4>
-									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br> (068) 841-00-61<br>
-										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/angelina.house.75" class="text-aqua text-white-hover">facebook.com/angelina</a>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3">
-							<div class="csi-member-card">
-								<div class="csi-member-img img">
-									<img src="../sources/img/student-college/members/yuri.jpg" alt="csi-member-img">
-								</div>
-								<div class="csi-member-name">
-									<h3 class="text-white text-center">Присташ Юрій</h3>
-									<h5 class="text-blue text-center">Голова Соціально-правового відділу</h5>
-								</div>
-								<div class="csi-member-info">
-									<h4 class="text-white">Контактна інформація:</h4>
-									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br> (063) 241-32-55<br>
-										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/profile.php?id=100007535716665" class="text-aqua text-white-hover">facebook.com/yuri</a>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3">
-							<div class="csi-member-card">
-								<div class="csi-member-img img">
-									<img src="../sources/img/student-college/members/nazar.jpg" alt="csi-member-img">
-								</div>
-								<div class="csi-member-name">
-									<h3 class="text-white text-center">Шутяк Назар</h3>
-									<h5 class="text-blue text-center">Голова Інформаційного відділу</h5>
-								</div>
-								<div class="csi-member-info">
-									<h4 class="text-white">Контактна інформація:</h4>
-									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br> (093) 858-46-40<br>
-										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/ienzryfpfh" class="text-aqua text-white-hover">facebook.com/ienzryfpfh</a>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3">
-							<div class="csi-member-card">
-								<div class="csi-member-img img">
-									<img src="../sources/img/student-college/members/eugene.png" alt="csi-member-img">
-								</div>
-								<div class="csi-member-name">
-									<h3 class="text-white text-center">Задерей Євген</h3>
-									<h5 class="text-blue text-center">Голова Спортивного відділу</h5>
-								</div>
-								<div class="csi-member-info">
-									<h4 class="text-white">Контактна інформація:</h4>
-									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br> (093) 868-66-05<br>
-										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/profile.php?id=100001748686289" class="text-aqua text-white-hover">facebook.com/eugene</a>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3">
-							<div class="csi-member-card">
-								<div class="csi-member-img img">
-									<img src="../sources/img/student-college/members/marta.png" alt="csi-member-img">
-								</div>
-								<div class="csi-member-name">
-									<h3 class="text-white text-center">Гриник Марта</h3>
-									<h5 class="text-blue text-center">Голова Арт відділу</h5>
-								</div>
-								<div class="csi-member-info">
-									<h4 class="text-white">Контактна інформація:</h4>
-									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br> (063) 019-25-31<br>
-										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/marta.hrynyk" class="text-aqua text-white-hover">facebook.com/marta.hrynyk</a>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3">
-							<div class="csi-member-card">
-								<div class="csi-member-img img">
-									<img src="../sources/img/student-college/members/nastya.jpg" alt="csi-member-img">
-								</div>
-								<div class="csi-member-name">
-									<h3 class="text-white text-center">Василенко Анастасія</h3>
-									<h5 class="text-blue text-center">Голова Культмасового відділу</h5>
-								</div>
-								<div class="csi-member-info">
-									<h4 class="text-white">Контактна інформація:</h4>
-									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br> (050) 073-52-75<br>
-										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/profile.php?id=100020842044124" class="text-aqua text-white-hover">facebook.com/ienzryfpfh</a>
 									</p>
 								</div>
 							</div>
@@ -387,76 +264,84 @@
 				<h2 class="text-blue text-center"><span>Новини колегії</span></h2>
 				<div class="row no-gutters">
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="../news.php" class="text-white">
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3>Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="../news.php" class="text-white">
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3>Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="../news.php" class="text-white">
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3>Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-12 col-md-6 col-lg-6">
-						<div class="news-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-lg-5">
-									<div class="news-card-img img">
-										<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+						<a href="../news.php" class="text-white">
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-7">
-									<div class="news-card-text">
-										<h3><a href="news.php" class="text-white">Lorem Ipsum</a></h3>
-										<h5 class="text-aqua">18.08.2017, 8.45</h5>
-										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3>Lorem Ipsum</h3>
+											<h5 class="text-aqua">18.08.2017, 8.45</h5>
+											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 				<div class="add-enother-news">
@@ -486,11 +371,11 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="../sources/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="../sources/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="../sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 	<!-- My scripts -->
 	<script src="student-college.js"></script>

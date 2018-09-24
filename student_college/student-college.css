@@ -73,7 +73,7 @@ h5{
 }
 
 .text-aqua{
-	color: #59b263;
+	color: #A6CE39;
 }
 
 .text-white-hover:hover{
@@ -86,6 +86,10 @@ h5{
 
 .text-center{
 	text-align: center;
+}
+
+a:hover{
+	text-decoration: none;
 }
 
 /* ========== IMG ========== */
@@ -112,14 +116,14 @@ h5{
 }
 
 .btn-aqua{
-	background-color: #59b263;
-	border-color: #59b263;
+	background-color: #A6CE39;
+	border-color: #A6CE39;
 	color: #fff !important;
 }
 
 .btn-aqua:hover{
 	background-color: #f9f9f9;
-	color: #59b263 !important;
+	color: #A6CE39 !important;
 }
 
 /* ===== PRELOADER ===== */
@@ -145,7 +149,8 @@ h5{
 
 /* ========== Header ========== */
 .navbar{
-	/*padding-bottom: 0;*/
+	padding-bottom: 0;
+	padding-top: 0;
 	box-shadow: 0px 0px 10px 0px #333;
 }
 
@@ -158,7 +163,7 @@ h5{
 }
 
 .navbar-light a.navbar-brand:hover{
-	color: #59b263;
+	color: #A6CE39;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -167,16 +172,16 @@ h5{
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-	color: #59b263
+	color: #A6CE39
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
  .navbar-light .navbar-nav .nav-link.active, 
  .navbar-light .navbar-nav .nav-link.show,
  .navbar-light .navbar-nav .show>.nav-link{
- 	color: #59b263;
+ 	color: #A6CE39;
  	font-weight: bold;
- 	border-bottom: 2px solid #59b263;
+ 	border-bottom: 2px solid #A6CE39;
  }
 
  /* ========== Bg-img ======= */
@@ -233,8 +238,8 @@ h5{
 	width: 50px;
 	height: 50px;
 	display: block;
-	border-top: 5px solid #2c3c4e;
-	border-right: 5px solid #2c3c4e;
+	border-top: 15px solid #2c3c4e;
+	border-right: 15px solid #2c3c4e;
 	border-top-right-radius: 5px;
 	position: absolute;
 	bottom: 25px;
@@ -294,7 +299,7 @@ h5{
 	position: absolute;
 	font-size: 12pt;
 	font-weight: bold;
-	color: #59b263;
+	color: #A6CE39;
 	left: -15px;
 }
 
@@ -322,12 +327,12 @@ h5{
 
 .csi-member-name{
 	position: absolute;
-	width: 110%;
-	left: -5%;
+	width: 100%;
+	left: 0;
 	bottom: 0;
 	z-index: 5;
 	padding: 5px 10px;
-	background-color: #59b263;
+	background-color: #A6CE39;
 }
 
 .csi-member-info{
@@ -361,7 +366,7 @@ h5{
 	vertical-align: middle;
 	font-size: 32pt;
 	border-right: 2px solid #f9f9f9;
-	color: #59b263;
+	color: #A6CE39;
 }
 
 .activity-card .activity-info{

@@ -3,20 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IPPT - gallery</title>
-
+	<link rel="icon" href="/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="sources/img/logo.png" type="image/x-icon">
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
 	<link rel="stylesheet" href="sources/css/style.min.css">
-	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
-	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- PRELOADER -->
@@ -113,14 +112,12 @@
 				<div class="col-12 col-lg-3">
 					<div class="gallery-navbar">
 						<ul>
-							<li><a href="#allnews" class="active">Всі альбоми</a></li>
+							<li><a href="#allnews" class="active">Всі новини</a></li>
 							<li><a href="#sport">Спорт</a></li>
 							<li><a href="#science">Наука</a></li>
-							<li><a href="#seminars">Семінари</a></li>
-							<li><a href="#events">Події</a></li>
+							<li><a href="#meeting">Зустрічі</a></li>
 							<li><a href="#trips">Подорожі</a></li>
-							<li><a href="#spring-of-lp">"Весна політехніки"</a></li>
-							<li><a href="#autumn-of-lp">"Осінь політехніки"</a></li>
+							<li><a href="#spring-and-autumn-of-lp">"Весна та Осінь політехніки"</a></li>
 						</ul>
 					</div>
 				</div>
@@ -135,7 +132,7 @@
 											<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
 										</div>
 										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h5 class="text-green">25.09.2017, 12:00</h5>
 											<h3 class="text-blue">Lorem Ipsum</h3>
 										</div>
 									</div>
@@ -148,7 +145,7 @@
 											<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
 										</div>
 										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h5 class="text-green">25.09.2017, 12:00</h5>
 											<h3 class="text-blue">Lorem Ipsum</h3>
 										</div>
 									</div>
@@ -161,7 +158,7 @@
 											<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
 										</div>
 										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h5 class="text-green">25.09.2017, 12:00</h5>
 											<h3 class="text-blue">Lorem Ipsum</h3>
 										</div>
 									</div>
@@ -174,7 +171,7 @@
 											<img src="sources/img/news/IMG_4805.jpg" alt="news-img">
 										</div>
 										<div class="gallery-text">
-											<h5 class="text-aqua">25.09.2017, 12:00</h5>
+											<h5 class="text-green">25.09.2017, 12:00</h5>
 											<h3 class="text-blue">Lorem Ipsum</h3>
 										</div>
 									</div>
@@ -212,7 +209,7 @@
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="row no-gutters">
+			<div class="row no-gutters align-items-center">
 				<div class="col-2">
 					<div class="footer-logo img">
 						<a href="index.php">
@@ -222,30 +219,29 @@
 				</div>
 				<div class="col-5">
 					<div class="contact-us text-white">
-						<p>Адреса: 9044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
-						<p>Тел: (032) 258-20-27б, (032) 297-07-55 </p>
-						<p>E-mail: IPPT.dept@lpnu.ua</p>
+						<p>Адреса: 79044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
+						<p>Тел: (+38032) 297-07-55, (+38032) 258-20-27б</p>
+						<p>E-mail: IPPT.dept@lpnu.ua, dir.ippt@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-5">
 					<div class="copyright">
-						<p class="text-aqua">
+						<p class="text-white">
 							<i class="fa fa-copyright" aria-hidden="true"></i>
-							2018 Інститут Підприємництва та Перспективних Технологій.<br> Всі права застережено.<br>
-							<a class="text-aqua" href="#our-genius">Розробка та підтримка здійснюється студентами ІППТ.</a>
+							2018 Інститут підприємництва та перспективних технологій <br> НУ "Львівська політехніка"<br>
+							<a class="text-green" href="#our-genius">Розробка та підтримка здійснюється викладачами та студентами ІППТ.</a>
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-
 	<!-- jQuery -->
-	<script src="sources/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 	<!-- My scripts -->
 	<script src="sources/js/script.min.js"></script>

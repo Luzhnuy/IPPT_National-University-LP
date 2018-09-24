@@ -8,13 +8,13 @@
 		$short_text = $_POST['short_text'];
 		$photograph = $_POST['photograph'];
 		$text = $_POST['text'];
-		
+		$type_of_new = $_POST['type_of_new'];
 		$images = $_FILES['photo']['tmp_name'];
 		$gimages = [];
 		
 		
 		$uid = md5(uniqid(rand(),1));
-	;
+	
 	
 		if(move_uploaded_file($images, '../img/'.$uid.'.jpg')){
 			$gimages = 'admin/img/'.$uid.'.jpg';
@@ -27,8 +27,9 @@
 		$news->author=$author;
 		$news->short_text=$short_text;
 		$news->photograph=$photograph;
+		$news->type_of_new = $type_of_new;
 		$news->text=$text;
-		$news->images=$gimages;
+		$news->img=$gimages;
 		$news->data_add = date('h-i-s j-m-y');
 		R::store($news);
 

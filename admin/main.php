@@ -2,7 +2,10 @@
 	
 	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
 
-
+if($_SESSION){
+  } else {
+    header('Location:../index.php');
+  }
 
 ?>
 <!DOCTYPE html>
@@ -50,7 +53,7 @@
 
     <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-          <form action="app/add_adward.php" method="POST">
+          <form action="app/add_adward.php" method="POST" enctype="multipart/form-data">
             
                 <div class="input-group">
                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Заголовок: </span>
@@ -65,7 +68,7 @@
                   <input type="textarea" class="form-control" name="text" aria-describedby="basic-addon1"><br><br><br><br><br>
                   <input type="hidden" name="10000" value="30000" />
                   <span class="fa fa-key" aria-hidden="true"></span>
-                  <input style="margin-left: 5px;" type='file' name="photo">
+                  <input style="margin-left: 5px;" type='file' name="img">
                 </div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
                 
@@ -84,7 +87,7 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
- <form action="app/add_adward.php" method="POST">
+ <form action="app/add_new.php" method="POST" enctype="multipart/form-data">
             
                 <div class="input-group">
                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Заголовок: </span>
@@ -101,7 +104,7 @@
                   <span class="fa fa-key" aria-hidden="true"></span>
                   <input style="margin-left: 5px;" type='file' name="photo">
                 </div>
-                <div style="text-align: center;margin-top: 5vh"><select class="form-control">
+                <div style="text-align: center;margin-top: 5vh"><select class="form-control" name="type_of_new" multiple="multiple">
                   <option value="1">Спорт</option>
                   <option value="2">Наука</option>
                   <option value="3">Події</option>
@@ -118,13 +121,24 @@
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
         <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+          Залити фотографію на головний слайдер
         </button>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                 <form action="app/add_adward.php" method="POST">
+            
+                <div class="input-group">
+                  
+                  <input type="hidden" name="10000" value="30000" />
+                  <span class="fa fa-key" aria-hidden="true"></span>
+                  <input style="margin-left: 5px;" type='file' name="img">
+                </div>
+               <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
+                
+            
+          </form>
       </div>
     </div>
   </div>

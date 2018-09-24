@@ -3,20 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IPPT - Projects page</title>
-
+	<link rel="icon" href="/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="sources/img/logo.png" type="image/x-icon">
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
 	<link rel="stylesheet" href="sources/css/style.min.css">
-	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
-	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- Preloader -->
@@ -107,77 +106,59 @@
 				<li class="breadcrumb-item active">Проекти</li>
 			</ol>
 
-			<div class="row">
-				<div class="col-12 col-lg-6">
-					<div class="ippt-projects">
-						<h2 class="text-center text-blue">Проекти наших викладачів</h2>
-						<div id="ipptProjectsAccordion" class="ipptProjectsAccordion" data-children=".item">
-						  <div class="item">
-						    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject1" aria-expanded="true" aria-controls="ipptProject1">Проект 1</a>
-						    <div id="ipptProject1" class="collapse" role="tabpanel">
-						      <p class="mb-3">
-						        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
-						      </p>
-						    </div>
-						  </div>
-						  <div class="item">
-						    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject2" aria-expanded="false" aria-controls="ipptProject2">Проект 2</a>
-						    <div id="ipptProject2" class="collapse show" role="tabpanel">
-						      <p class="mb-3">
-						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						      </p>
-						    </div>
-						  </div>
-						  <div class="item">
-						    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject3" aria-expanded="false" aria-controls="ipptProject3">Проект 2</a>
-						    <div id="ipptProject3" class="collapse show" role="tabpanel">
-						      <p class="mb-3">
-						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						      </p>
-						    </div>
-						  </div>
+			<div id="projects-page-tabs">
+				<div class="row">
+					<div class="col-12 col-lg-3">
+						<div class="projects-page-navbar">
+							<ul class="nav nav-tabs projects-page-tabs" role="tablist">
+								<li role="presentation"><a class="post-text active" href="#progect-1"  aria-controls="progect-1" role="tab" data-toggle="tab">Проект 1</a></li>
+								<li role="presentation"><a class="post-text" href="#project-2" aria-controls="project-2" role="tab" data-toggle="tab">Проект 2</a></li>
+								<li role="presentation"><a class="post-text" href="#project-3" aria-controls="project-3" role="tab" data-toggle="tab">Проект 3</a></li>
+							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-lg-6">
-					<div class="students-projects">
-						<h2 class="text-center text-blue">Проекти наших студентів</h2>
-						<div id="studProjectsAccordion" class="studProjectsAccordion" data-children=".item">
-						  <div class="item">
-						    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject1" aria-expanded="true" aria-controls="studProject1">Проект 1</a>
-						    <div id="studProject1" class="collapse" role="tabpanel">
-						      <p class="mb-3">
-						        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
-						      </p>
-						    </div>
-						  </div>
-						  <div class="item">
-						    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject2" aria-expanded="false" aria-controls="studProject2">Проект 2</a>
-						    <div id="studProject2" class="collapse show" role="tabpanel">
-						      <p class="mb-3">
-						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						      </p>
-						    </div>
-						  </div>
-						  <div class="item">
-						    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject3" aria-expanded="false" aria-controls="studProject3">Проект 2</a>
-						    <div id="studProject3" class="collapse show" role="tabpanel">
-						      <p class="mb-3">
-						        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						      </p>
-						    </div>
-						  </div>
+					<div class="col-12 col-lg-9">
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active show" id="progect-1">
+								<h2>Проект 1</h2>
+								<p class="text-green text-bold text-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ratione ipsum, consequuntur, voluptates odit accusantium ab voluptatem necessitatibus reprehenderit deserunt, beatae nobis? Repellat amet necessitatibus unde, veritatis beatae, est natus.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade" id="project-2">
+								<h2>Проект 2</h2>
+								<p class="text-green text-bold text-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ratione ipsum, consequuntur, voluptates odit accusantium ab voluptatem necessitatibus reprehenderit deserunt, beatae nobis? Repellat amet necessitatibus unde, veritatis beatae, est natus.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade" id="project-3">
+								<h2>Проект 3</h2>
+								<p class="text-green text-bold text-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ratione ipsum, consequuntur, voluptates odit accusantium ab voluptatem necessitatibus reprehenderit deserunt, beatae nobis? Repellat amet necessitatibus unde, veritatis beatae, est natus.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus laboriosam et commodi consectetur odio tempora aut impedit eveniet, at quaerat culpa eos officiis, id quo pariatur quibusdam cupiditate soluta.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="row no-gutters">
+			<div class="row no-gutters align-items-center">
 				<div class="col-2">
 					<div class="footer-logo img">
 						<a href="index.php">
@@ -187,17 +168,17 @@
 				</div>
 				<div class="col-5">
 					<div class="contact-us text-white">
-						<p>Адреса: 9044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
-						<p>Тел: (032) 258-20-27б, (032) 297-07-55 </p>
-						<p>E-mail: IPPT.dept@lpnu.ua</p>
+						<p>Адреса: 79044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
+						<p>Тел: (+38032) 297-07-55, (+38032) 258-20-27б</p>
+						<p>E-mail: IPPT.dept@lpnu.ua, dir.ippt@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-5">
 					<div class="copyright">
-						<p class="text-aqua">
+						<p class="text-white">
 							<i class="fa fa-copyright" aria-hidden="true"></i>
-							2018 Інститут Підприємництва та Перспективних Технологій.<br> Всі права застережено.<br>
-							<a class="text-aqua" href="#our-genius">Розробка та підтримка здійснюється студентами ІППТ.</a>
+							2018 Інститут підприємництва та перспективних технологій <br> НУ "Львівська політехніка"<br>
+							<a class="text-green" href="#our-genius">Розробка та підтримка здійснюється викладачами та студентами ІППТ.</a>
 						</p>
 					</div>
 				</div>
@@ -206,11 +187,11 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="sources/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 	<!-- My scripts -->
 	<script src="sources/js/script.min.js"></script>

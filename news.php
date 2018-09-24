@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IPPT - News page</title>
-
+	<link rel="icon" href="/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="sources/img/logo.png" type="image/x-icon">
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
@@ -18,8 +19,6 @@
 
 	<!-- My styles -->
 	<link rel="stylesheet" href="sources/css/style.min.css">
-	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
-	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body>
 	<!-- Preloader -->
@@ -69,31 +68,25 @@
 						</div>					
 					</div>
 					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
-						<!-- <div class="row justify-content-start"> -->
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							    <ul class="navbar-nav"> <!--  mr-auto -->
-							    	<!-- <div class="row justify-content-center justify-content-md-end"> -->
-							    		<li class="nav-item">
-									        <a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
-									    </li>
-									    <li class="nav-item">
-									        <a class="nav-link" href="entrant.php">Вступнику</a>
-									    </li>
-									    <li class="nav-item">
-									        <a class="nav-link" href="student.php">Студенту</a>
-									    </li>
-									    <li class="nav-item">
-									        <a class="nav-link" href="graduate.php">Випускнику</a>
-									    </li>
-									    <li class="nav-item active">
-									        <!-- <a class="nav-link" href="blog/index.php">Блог</a> -->
-									        <a class="nav-link" href="news-archive.php">Новини</a>
-									    </li>
-							    	<!-- </div> -->
-							    </ul>
-							    
-						    </div>
-						<!-- </div> -->
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav">
+							    <li class="nav-item">
+									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="entrant.php">Вступнику</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="student.php">Студенту</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="graduate.php">Випускнику</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="news-archive.php">Новини</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4">
 						<div class="row justify-content-end">
@@ -121,12 +114,11 @@
 				<div class="col-12 col-lg-9">
 					<div class="main-news">
 						<div class="news-header">
-							<h2 class="text-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+							<h2 class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 						</div>
 						<div class="news-body">
 							<div class="news-info">
 								<h6>02.10.2017, <span class="news-author-photo">(Автор: <span>Lorem Ipsum</span>, Фотограф: <span>Lorem Ipsum</span></span>)</h6>
-								<!-- <h6 style="font-weight: 100;"> Поширити: <span>fb</span></h6> -->
 							</div>
 							<div class="row">
 								<div class="col-7">
@@ -172,7 +164,7 @@
 											<div class="col-4">
 												<div class="news-more-img">
 													<div class="news-more-img-btn">
-														<a href="gallery.php" class="btn btn-aqua"><i class="fa fa-plus" aria-hidden="true"></i></a>
+														<a href="gallery.php" class="btn btn-green"><i class="fa fa-plus" aria-hidden="true"></i></a>
 													</div>
 												</div>
 											</div>
@@ -206,7 +198,7 @@
 											<img src="sources/img/news/IMG_4731.jpg" alt="last-news-img">
 										</div>
 										<div class="last-news-title">
-											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-green">Lorem Ipsum</a></h4>
 										</div>
 										<div class="last-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -220,7 +212,7 @@
 											<img src="sources/img/news/IMG_4752.jpg" alt="last-news-img">
 										</div>
 										<div class="last-news-title">
-											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-green">Lorem Ipsum</a></h4>
 										</div>
 										<div class="last-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -242,7 +234,7 @@
 											<img src="sources/img/news/IMG_4731.jpg" alt="top-news-img">
 										</div>
 										<div class="top-news-title">
-											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-green">Lorem Ipsum</a></h4>
 										</div>
 										<div class="top-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -256,7 +248,7 @@
 											<img src="sources/img/news/IMG_4752.jpg" alt="top-news-img">
 										</div>
 										<div class="top-news-title">
-											<h4 class="text-center"><a href="news.php" class="text-blue">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php" class="text-green">Lorem Ipsum</a></h4>
 										</div>
 										<div class="top-news-text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
@@ -271,11 +263,11 @@
 			
 		</div>
 	</section>
-
+	
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="row no-gutters">
+			<div class="row no-gutters align-items-center">
 				<div class="col-2">
 					<div class="footer-logo img">
 						<a href="index.php">
@@ -285,17 +277,17 @@
 				</div>
 				<div class="col-5">
 					<div class="contact-us text-white">
-						<p>Адреса: 9044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
-						<p>Тел: (032) 258-20-27б, (032) 297-07-55 </p>
-						<p>E-mail: IPPT.dept@lpnu.ua</p>
+						<p>Адреса: 79044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
+						<p>Тел: (+38032) 297-07-55, (+38032) 258-20-27б</p>
+						<p>E-mail: IPPT.dept@lpnu.ua, dir.ippt@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-5">
 					<div class="copyright">
-						<p class="text-aqua">
+						<p class="text-white">
 							<i class="fa fa-copyright" aria-hidden="true"></i>
-							2018 Інститут Підприємництва та Перспективних Технологій.<br> Всі права застережено.<br>
-							<a class="text-aqua" href="#our-genius">Розробка та підтримка здійснюється студентами ІППТ.</a>
+							2018 Інститут підприємництва та перспективних технологій <br> НУ "Львівська політехніка"<br>
+							<a class="text-green" href="#our-genius">Розробка та підтримка здійснюється викладачами та студентами ІППТ.</a>
 						</p>
 					</div>
 				</div>
@@ -304,11 +296,11 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="sources/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 	<!-- Fancybox -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
