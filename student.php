@@ -87,8 +87,8 @@
 					</div>
 					<div class="col-12 col-lg-4">
 						<div class="row justify-content-end">
-							<form class="form-inline my-2 my-lg-0 search-input">
-								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search">
+							<form class="form-inline my-2 my-lg-0 search-input" action="admin/app/search.php" method="POST">
+								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search" name="search">
 								<button class="btn btn-searching my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 							</form>
 						</div>

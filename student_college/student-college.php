@@ -1,3 +1,11 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+	$news = R::getAll('SELECT * FROM news WHERE type_of_new=4');
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,14 +127,14 @@
 									<img src="../sources/img/student-college/members/roman.jpg" alt="csi-member-img">
 								</div>
 								<div class="csi-member-name">
-									<h3 class="text-white text-center">Цудний <br> Роман</h3>
+									<h3 class="text-white text-center">Присташ <br> Юрій</h3>
 									<h5 class="text-blue text-center">Голова Колегії студентів</h5>
 								</div>
 								<div class="csi-member-info">
 									<h4 class="text-white">Контактна інформація:</h4>
 									<p class="text-aqua">
-										<span class="text-bold">Тел:</span><br>  (093) 274-48-06<br>
-										<span class="text-bold">E-mail:</span><br> rtsudny@gmail.com<br>
+										<span class="text-bold">Тел:</span><br>  (097) 17 50 340<br>
+										<span class="text-bold">E-mail: ksi.ippt@gmail.com</span><br> <br>
 										<span class="text-bold">Соц. мережі:</span><br> <a href="https://www.facebook.com/rtsudny" class="text-aqua text-white-hover">facebook.com/rtsudny</a>
 									</p>
 								</div>
@@ -263,86 +271,28 @@
 			<div class="container">
 				<h2 class="text-blue text-center"><span>Новини колегії</span></h2>
 				<div class="row no-gutters">
+					<?php foreach($news as $new): ?>
 					<div class="col-12 col-md-6 col-lg-6">
-						<a href="../news.php" class="text-white">
+						<a href="news.php?news=<?=$new['id']; ?>" >
 							<div class="news-card">
 								<div class="row no-gutters">
 									<div class="col-12 col-lg-5">
 										<div class="news-card-img img">
-											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
+											<img src="../<?=$new['img']; ?>" alt="news">
 										</div>
 									</div>
 									<div class="col-12 col-lg-7">
 										<div class="news-card-text">
-											<h3>Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+											<h3 class="text-white"><?=$new['title']; ?></h3>
+											<h5 class="text-green"><?=$new['data_add']; ?></h5>
+											<p class="text-white"><?=$new['short_text']; ?></p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-6">
-						<a href="../news.php" class="text-white">
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3>Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6">
-						<a href="../news.php" class="text-white">
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3>Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6">
-						<a href="../news.php" class="text-white">
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="../sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3>Lorem Ipsum</h3>
-											<h5 class="text-aqua">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
+				<?php endforeach; ?>
 				</div>
 				<div class="add-enother-news">
 					<a href="news-archive.php" class="btn btn-aqua">Переглянути більше</a>
@@ -358,7 +308,7 @@
 			<p class="text-white">
 				Адреса: м. Львів, вул. Горбачевського, 18, каб.: 001 <br>
 				E-mail: ksi.ippt@gmail.com <br>
-				Тел: (093) 274-48-06 <br>
+				Тел: 097 17 50 340 <br>
 				<a href="https://www.facebook.com/ksiippt/" class="text-aqua text-white-hover"><img src="../sources/img/contacts/facebook.svg" alt="facebook-icon"></a>
 				<a href="https://www.instagram.com/ksi_ippt/" class="text-aqua text-white-hover"><img src="../sources/img/contacts/instagram.svg" alt="instagram-icon"></a>
 			</p>

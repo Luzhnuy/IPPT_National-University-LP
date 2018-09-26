@@ -1,3 +1,9 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+	$dep = R::getAll("SELECT * FROM department WHERE dp=1");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,9 +53,9 @@
 			      <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#science">Наукова діяльність</a>
 			      </li>
-			      <li class="nav-item">
+			      <!-- <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#ist-stud-proj">Проекти</a>
-			      </li>
+			      </li> -->
 			      <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#partners">Партнери</a>
 			      </li>
@@ -178,14 +184,16 @@
 			<div class="container">
 				<h2 class="text-center">Працівники кафедри</h2>
 				<div class="row">
+				<?php foreach($dep as $d): ?> 	
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-dark-blue"><a href="teacher-ist.php">Теслюк Василь Миколайович </a></h4>
-							<h6 class="text-green">завідувач кафедри, д.т.н., професор</h6>
+							<h4 class="text-dark-blue"><a><?=$d['name']; ?> </a></h4>
+							<h6 class="text-green"><?=$d['zaz']; ?></h6>
 							<hr>
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
+				<?php endforeach; ?>	
+<!-- 					<div class="col-12 col-md-6">
 						<div class="teacher">
 							<h4 class="text-dark-blue"><a href="teacher-ist.php">Слюсарчук Юрій Миколайович  </a></h4>
 							<h6 class="text-green">доцент кафедри, к.ф.-м.н., доцент</h6>
@@ -268,7 +276,7 @@
 							<h6 class="text-green">асистент кафедри</h6>
 							<hr>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -323,7 +331,7 @@
 			<div class="dark-blue-bg"></div>
 		</div>
 
-		<div id="ist-stud-proj" class="ist-stud-proj">
+	<!-- 	<div id="ist-stud-proj" class="ist-stud-proj">
 			<div class="container">
 				<h2 class="text-center">Проекти кафедри</h2>
 				<div class="row">
@@ -338,8 +346,8 @@
 									</div>
 									<div class="col-12 col-md-7">
 										<div class="proj-info">
-											<h3 class="text-white">Lorem Ipsum</h3>
-											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum mollitia fuga ut atque dolorum.</p> -->
+											<h3 class="text-white">Lorem Ipsum</h3> -->
+											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum mollitia fuga ut atque dolorum.</p>
 										</div>
 									</div>
 								</div>
@@ -358,7 +366,7 @@
 									<div class="col-md-7">
 										<div class="proj-info">
 											<h3 class="text-white">Lorem Ipsum</h3>
-											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptate reiciendis adipisci architecto nisi dolore!</p> -->
+											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptate reiciendis adipisci architecto nisi dolore!</p> 
 										</div>
 									</div>
 								</div>
@@ -370,7 +378,7 @@
 					<a href="projects.php" class="btn btn-dark-blue">Переглянути усі</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="partners" class="partners">
 			<div class="container">

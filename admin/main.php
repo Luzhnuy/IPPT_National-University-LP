@@ -201,6 +201,41 @@ if($_SESSION){
       </div>
     </div>
   </div>
+      <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+          Додати викладача
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+          <form action="app/add_department_person.php" method="POST" enctype="multipart/form-data">
+            
+                <div class="input-group">
+                  
+                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Прізвище,Ім'я,по-батькові: </span>
+                  <input type="text" class="form-control" name="name"  aria-describedby="basic-addon1">
+                  <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Звання і заслуги: </span>
+                  <input type="text" class="form-control" name="zaz"  aria-describedby="basic-addon1">
+               
+           
+                </div>
+                <div style="text-align: center;margin-top: 5vh"><select class="form-control" name="department" multiple="multiple">
+                  <option value="1">ІСТ</option>
+                  <option value="2">ЕКМ</option>
+                  <option value="3">ФОА</option>
+                 
+                </select></div>
+
+               <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
+                
+            
+          </form>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 

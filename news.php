@@ -108,8 +108,8 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 					</div>
 					<div class="col-12 col-lg-4">
 						<div class="row justify-content-end">
-							<form class="form-inline my-2 my-lg-0 search-input">
-								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search">
+							<form class="form-inline my-2 my-lg-0 search-input" action="admin/app/search.php" method="POST">
+								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search" name="search">
 								<button class="btn btn-searching my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 							</form>
 						</div>
@@ -204,9 +204,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 						</div>
 						<div class="last-news-navbar-body">
 							<div class="row no-gutters">
-							<?php foreach ($latest_news as $l_news) {
-								# code...
-							} ?>	
+							<?php foreach ($latest_news as $l_news): ?>	
 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="last-news">
 										<div class="last-news-img img">
@@ -220,6 +218,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 										</div>
 									</div>
 								</div>
+							<?php endforeach; ?>
 								<!-- <hr> -->
 <!-- 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="last-news">

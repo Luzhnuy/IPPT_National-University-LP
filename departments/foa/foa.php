@@ -1,3 +1,9 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+	$dep = R::getAll("SELECT * FROM department WHERE dp=3");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,9 +53,9 @@
 			      <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#science">Наукова діяльність</a>
 			      </li>
-			      <li class="nav-item">
+			    <!--   <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#foa-stud-proj">Проекти</a>
-			      </li>
+			      </li> -->
 			      <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#partners">Партнери</a>
 			      </li>
@@ -183,20 +189,15 @@
 			<div class="container">
 				<h2 class="text-center">Працівники кафедри</h2>
 				<div class="row">
+					<?php foreach($dep as $d): ?> 	
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-foa.php">Гориславець Павло Анатолійович</a></h4>
-							<h6 class="text-green">завідувач кафедри ФОА, к.е.н., доц.</h6>
+							<h4 class="text-dark-blue"><a><?=$d['name']; ?> </a></h4>
+							<h6 class="text-green"><?=$d['zaz']; ?></h6>
 							<hr>
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
-						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-foa.php">Лапішко Марія Львівна</a></h4>
-							<h6 class="text-green">професор, к.е.н., проф.</h6>
-							<hr>
-						</div>
-					</div>
+				<?php endforeach; ?>	
 				</div>
 			</div>
 		</div>
@@ -223,7 +224,7 @@
 			<div class="blue-bg"></div>
 		</div>
 
-		<div id="foa-stud-proj" class="foa-stud-proj">
+<!-- 		<div id="foa-stud-proj" class="foa-stud-proj">
 			<div class="container">
 				<h2 class="text-center">Проекти кафедри</h2>
 				<div class="row">
@@ -240,7 +241,7 @@
 										<div class="proj-info">
 											<h3 class="text-white">Зустріч з випускниками Дрогобич, 2018</h3>
 											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum mollitia fuga ut atque dolorum.</p> -->
-										</div>
+										<!-- </div>
 									</div>
 								</div>
 							</div>
@@ -259,7 +260,7 @@
 										<div class="proj-info">
 											<h3 class="text-white">Наукові фестини та брейн-ринг, 2018</h3>
 											<!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptate reiciendis adipisci architecto nisi dolore!</p> -->
-										</div>
+								<!-- 		</div>
 									</div>
 								</div>
 							</div>
@@ -270,7 +271,7 @@
 					<a href="projects.php" class="btn btn-blue">Переглянути усі</a>
 				</div>
 			</div>
-		</div>
+		</div>  -->
 
 		<div id="partners" class="partners">
 			<div class="container">

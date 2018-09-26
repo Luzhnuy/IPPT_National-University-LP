@@ -1,3 +1,9 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+	$dep = R::getAll("SELECT * FROM department WHERE dp=2");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,9 +51,9 @@
 			      <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#science">Наукова діяльність</a>
 			      </li>
-			      <li class="nav-item">
+			     <!--  <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#ekm-stud-proj">Проекти</a>
-			      </li>
+			      </li> -->
 			      <li class="nav-item">
 			        <a class="nav-link nav-link-scroll" href="#partners">Партнери</a>
 			      </li>
@@ -140,20 +146,15 @@
 			<div class="container">
 				<h2 class="text-center">Працівники кафедри</h2>
 				<div class="row">
+		<?php foreach($dep as $d): ?> 	
 					<div class="col-12 col-md-6">
 						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ekm.php">Лисяк Наталя Михайлівна</a></h4>
-							<h6 class="text-green">завідувач кафедри, к.е.н., доц.</h6>
+							<h4 class="text-dark-blue"><a><?=$d['name']; ?> </a></h4>
+							<h6 class="text-green"><?=$d['zaz']; ?></h6>
 							<hr>
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
-						<div class="teacher">
-							<h4 class="text-blue"><a href="teacher-ekm.php">Олекюк Ганна Василівна</a></h4>
-							<h6 class="text-green">доцент кафедри, к.е.н.</h6>
-							<hr>
-						</div>
-					</div>
+				<?php endforeach; ?>	
 				</div>
 			</div>
 		</div>
@@ -197,7 +198,7 @@
 			<div class="blue-bg"></div>
 		</div>
 
-		<div id="ekm-stud-proj" class="ekm-stud-proj">
+<!-- 		<div id="ekm-stud-proj" class="ekm-stud-proj">
 			<div class="container">
 				<h2 class="text-center">Проекти кафедри</h2>
 				<div class="row">
@@ -206,7 +207,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="partners" class="partners">
 			<div class="container">

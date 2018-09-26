@@ -1,10 +1,12 @@
 <?php 
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
 
-	$news = R::getAll('SELECT * FROM news WHERE type_of_new=4');
+	$search_line  = $_POST['search'];
 
+	$news = R::getAll("SELECT * FROM news WHERE  title LIKE '%".$search_line."%'");
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,24 +14,24 @@
 	<meta charset="UTF-8">
 	<title>IPPT - news archive</title>
 	<link rel="icon" href="/logo.png" type="image/x-icon">
-	<link rel="shortcut icon" href="sources/img/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../../sources/img/logo.png" type="image/x-icon">
 	<!-- Normalize css -->
-	<link rel="stylesheet" href="sources/css/normalize.min.css">
+	<link rel="stylesheet" href="../../sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="sources/css/style.min.css">
+	<link rel="stylesheet" href="../../sources/css/style.min.css">
 </head>
 <body>
 	<!-- PRELOADER -->
 	<div id="preloader">
 		<div class="preload-img">
-			<img class="preload-logo" src="sources/img/logo.png" alt="logo">
+			<img class="preload-logo" src="../../sources/img/logo.png" alt="logo">
 		</div>
 	</div>
 
@@ -41,7 +43,7 @@
 					<div class="col-2 col-md-2 align-self-center">
 						<div class="nav-logo">
 							<div class="nav-logo-img">
-								<a href="index.php"></a>
+								<a href="../../index.php"></a>
 							</div>
 							<div class="nav-logo-info">
 								<span>Інститут підприємництва та перспективних технологій</span>
@@ -76,27 +78,27 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav"> 
 							    <li class="nav-item">
-									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="../../index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="entrant.php">Вступнику</a>
+									<a class="nav-link" href="../../entrant.php">Вступнику</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="student.php">Студенту</a>
+									<a class="nav-link" href="../../student.php">Студенту</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="graduate.php">Випускнику</a>
+									<a class="nav-link" href="../../graduate.php">Випускнику</a>
 								</li>
 								<li class="nav-item active">
-									<a class="nav-link" href="news-archive.php">Новини</a>
+									<a class="nav-link" href="../../news-archive.php">Новини</a>
 								</li>
 							</ul>    
 						</div>
 					</div>
 					<div class="col-12 col-lg-4">
 						<div class="row justify-content-end">
-							<form class="form-inline my-2 my-lg-0 search-input" action="admin/app/search.php" method="POST">
-								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search" name="search">
+							<form class="form-inline my-2 my-lg-0 search-input">
+								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search">
 								<button class="btn btn-searching my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 							</form>
 						</div>
@@ -113,12 +115,12 @@
 				<div class="col-12 col-lg-3">
 					<div class="news-archive-navbar">
 						<ul>
-							<li><a href="news-archive.php">Всі новини</a></li>
-							<li><a href="news_sport.php" >Спорт</a></li>
-							<li><a href="news_science.php">Наука</a></li>
-							<li><a href="news_meeting.php" >Зустрічі</a></li>
-							<li><a href="news_trips.php">Подорожі</a></li>
-							<li><a href="news_ksi.php" class="active">"Весна та Осінь політехніки"</a></li>
+							<li><a href="../../news-archive.php" class="active">Всі новини</a></li>
+							<li><a href="../../news_sport.php">Спорт</a></li>
+							<li><a href="../../news_science.php">Наука</a></li>
+							<li><a href="../../news_meeting.php">Зустрічі</a></li>
+							<li><a href="../../news_trips.php">Подорожі</a></li>
+							<li><a href="../../news_ksi.php">"Весна та Осінь політехніки"</a></li>
 						</ul>
 					</div>
 				</div>
@@ -130,12 +132,12 @@
 							<div class="row no-gutters">
 								<div class="col-md-4">
 									<div class="news-archive-img img">
-										<img src="<?=$new['img']; ?>" alt="news-img">
+										<img src="../../<?=$new['img']; ?>" alt="news-img">
 									</div>
 								</div>
 								<div class="col-md-8">
 									<div class="news-archive-text">
-										<h3><a href="news.php?news=<?=$new['id']; ?>" class="text-dark-blue"><?=$new['title']; ?></a></h3>
+										<h3><a href="../../news.php?news=<?=$new['id']; ?>" class="text-dark-blue"><?=$new['title']; ?></a></h3>
 										<h5 class="text-green"><?=$new['data_add']; ?></h5>
 										<p class="text-black"><?=$new['short_text']; ?></p>
 									</div>
@@ -156,8 +158,8 @@
 			<div class="row no-gutters align-items-center">
 				<div class="col-2">
 					<div class="footer-logo img">
-						<a href="index.php">
-							<img src="sources/img/logo.png" alt="footer-logo">
+						<a href="../../index.php">
+							<img src="../../sources/img/logo.png" alt="footer-logo">
 						</a>
 					</div>
 				</div>
@@ -188,6 +190,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 	<!-- My scripts -->
-	<script src="sources/js/script.min.js"></script>
+	<script src="../../sources/js/script.min.js"></script>
 </body>
 </html>
