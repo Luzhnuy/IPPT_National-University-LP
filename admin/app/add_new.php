@@ -21,19 +21,22 @@
 		}
 			
 		
-		
-		$news = R::dispense('news');
-		$news->title=$title;
-		$news->author=$author;
-		$news->short_text=$short_text;
-		$news->photograph=$photograph;
-		$news->type_of_new = $type_of_new;
-		$news->text=$text;
-		$news->img=$gimages;
-		$news->data_add = date('h-i-s j-m-y');
-		R::store($news);
-
-		header('Location:../main.php');
+		try{
+			$news = R::dispense('news');
+			$news->title=$title;
+			$news->author=$author;
+			$news->short_text=$short_text;
+			$news->photograph=$photograph;
+			$news->type_of_new = $type_of_new;
+			$news->text=$text;
+			$news->img=$gimages;
+			$news->data_add = date('j-m-y,h:i');
+			R::store($news);
+		} catch (Exception $e) {
+			echo "Вибачайте сталась помилка зв'яжіться з розробником 0971750340";
+		} finally {
+			header('Location:../main.php');
+		}
 
 
 

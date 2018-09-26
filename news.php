@@ -1,8 +1,26 @@
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+$news_count= R::getCell("SELECT count(*) FROM news");
+
+$random_id = rand(1,$news_count);
+
+$latest_news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 2");
+
+$news_random = R::getRow("SELECT * FROM news WHERE id=".$random_id);
+
+$news_id = $_GET['news'];
+
+$news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IPPT - News page</title>
+	<title>IPPT - <?=$news['title']; ?></title>
 	<link rel="icon" href="/logo.png" type="image/x-icon">
 	<link rel="shortcut icon" href="sources/img/logo.png" type="image/x-icon">
 	<!-- Normalize css -->
@@ -114,38 +132,32 @@
 				<div class="col-12 col-lg-9">
 					<div class="main-news">
 						<div class="news-header">
-							<h2 class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+							<h2 class="text-dark-blue"><?=$news['title']; ?></h2>
 						</div>
 						<div class="news-body">
 							<div class="news-info">
-								<h6>02.10.2017, <span class="news-author-photo">(Автор: <span>Lorem Ipsum</span>, Фотограф: <span>Lorem Ipsum</span></span>)</h6>
+								<h6>02.10.2017, <span class="news-author-photo">(Автор: <span><?=$news['author']; ?></span>, Фотограф: <span><?=$news['photograph']; ?></span></span>)</h6>
 							</div>
 							<div class="row">
 								<div class="col-7">
 									<div class="news-img img">
-										<a data-fancybox="news" href="sources/img/news/IMG_4690.jpg">
-											<img src="sources/img/news/IMG_4690.jpg" alt="news-img">
+										<a data-fancybox="news" href="<?=$news['img']; ?>">
+											<img src="<?=$news['img']; ?>" alt="news-img">
 										</a>
 									</div>
 								</div>
 								<div class="col-5">
 									<div class="news-title">
-										<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem doloremque et soluta eaque ipsam voluptas suscipit perspiciatis doloribus nesciunt culpa.</h4>
+										<h4><?=$news['short_text']; ?></h4>
 									</div>
 								</div>
 								<div class="col-12">
 									<div class="news-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nesciunt enim quos, doloribus maxime consequatur, aliquam aspernatur est deleniti veritatis magnam omnis, nam dolor! Atque soluta magnam nemo maxime aspernatur.</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident corporis repellat voluptate accusamus saepe illum, nisi possimus eum neque natus nostrum cumque blanditiis quis dolorum ducimus dicta vitae dignissimos amet!</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatum sapiente, nemo quidem quisquam assumenda atque provident, voluptatem sunt fugit beatae, delectus optio velit incidunt. Rerum tenetur sint itaque quis.</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure neque, impedit cupiditate quia ipsam maxime tempore libero, sint ipsa quibusdam perferendis veniam. Atque, dolores ullam possimus veritatis pariatur, distinctio qui?</p>
+										<p><?=$news['text']; ?></p>
 									</div>
 								</div>
 								<div class="col-12">
-									<div class="news-images">
+					<!-- 				<div class="news-images">
 										<div class="row">
 											<div class="col-4">
 												<div class="img">
@@ -169,7 +181,7 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 									
 								</div>
 							</div>
@@ -192,21 +204,24 @@
 						</div>
 						<div class="last-news-navbar-body">
 							<div class="row no-gutters">
+							<?php foreach ($latest_news as $l_news) {
+								# code...
+							} ?>	
 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="last-news">
 										<div class="last-news-img img">
-											<img src="sources/img/news/IMG_4731.jpg" alt="last-news-img">
+											<img src="<?=$l_news['img']; ?>" alt="last-news-img">
 										</div>
 										<div class="last-news-title">
-											<h4 class="text-center"><a href="news.php" class="text-green">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php?news=<?=$l_news['id']; ?>" class="text-green"><?=$l_news['title']; ?></a></h4>
 										</div>
 										<div class="last-news-text">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
+											<p><?=$l_news['short_text'] ?></p>
 										</div>
 									</div>
 								</div>
 								<!-- <hr> -->
-								<div class="col-12 col-md-6 col-lg-12">
+<!-- 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="last-news">
 										<div class="last-news-img img">
 											<img src="sources/img/news/IMG_4752.jpg" alt="last-news-img">
@@ -218,7 +233,7 @@
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -231,18 +246,18 @@
 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="top-news">
 										<div class="top-news-img img">
-											<img src="sources/img/news/IMG_4731.jpg" alt="top-news-img">
+											<img src="<?=$news_random['img']; ?>" alt="top-news-img">
 										</div>
 										<div class="top-news-title">
-											<h4 class="text-center"><a href="news.php" class="text-green">Lorem Ipsum</a></h4>
+											<h4 class="text-center"><a href="news.php?news=<?=$news_random['id']; ?>" class="text-green"><?=$news_random['title']; ?></a></h4>
 										</div>
 										<div class="top-news-text">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
+											<p><?=$news_random['short_text']; ?></p>
 										</div>
 									</div>
 								</div>
 								<!-- <hr> -->
-								<div class="col-12 col-md-6 col-lg-12">
+				<!-- 				<div class="col-12 col-md-6 col-lg-12">
 									<div class="top-news">
 										<div class="top-news-img img">
 											<img src="sources/img/news/IMG_4752.jpg" alt="top-news-img">
@@ -254,7 +269,7 @@
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi blanditiis illo dolorem, consequuntur provident sint qui facere quisquam magni nulla necessitatibus labore ducimus cumque.</p>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

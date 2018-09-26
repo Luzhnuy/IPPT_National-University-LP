@@ -25,16 +25,16 @@ if($_SESSION){
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Всі пости <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="main.php">Всі пости <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Залити Розклад</a>
+	        <a class="nav-link" href="rozklad.php">Залити Розклад</a>
 	      </li>
-	      <li class="nav-item">
+	    <!--   <li class="nav-item">
 	        <a class="nav-link" href="#">Pricing</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link " href="#">Disabled</a>
+	        <a class="nav-link " href="#">Disabled</a> -->
 	      </li>
 	    </ul>
 	  </div>
@@ -107,8 +107,9 @@ if($_SESSION){
                 <div style="text-align: center;margin-top: 5vh"><select class="form-control" name="type_of_new" multiple="multiple">
                   <option value="1">Спорт</option>
                   <option value="2">Наука</option>
-                  <option value="3">Події</option>
+                  <option value="3">Зустрічі</option>
                   <option value="4">Весна та осінь політехніки</option>
+                  <option value="5">Подорожі</option>
                 </select></div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
                 
@@ -127,13 +128,13 @@ if($_SESSION){
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-                 <form action="app/add_adward.php" method="POST">
+                 <form action="app/add_slider.php" method="POST" enctype="multipart/form-data">
             
                 <div class="input-group">
                   
                   <input type="hidden" name="10000" value="30000" />
                   <span class="fa fa-key" aria-hidden="true"></span>
-                  <input style="margin-left: 5px;" type='file' name="img">
+                  <input style="margin-left: 5px;" type='file' name="slide">
                 </div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
                 
@@ -146,16 +147,60 @@ if($_SESSION){
     <div class="card-header" id="headingFour">
       <h5 class="mb-0">
         <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+          Додати проект інституту
         </button>
       </h5>
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <form action="app/add_project.php" method="POST" enctype="multipart/form-data">
+            
+                <div class="input-group">
+                  
+                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Заголовок: </span>
+                  <input type="text" class="form-control" name="title"  aria-describedby="basic-addon1">
+                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Головний тезис: </span>
+                  <input type="text" class="form-control" name="main_think"  aria-describedby="basic-addon1">
+                  <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Повний опис: </span>
+                  <input type="textarea" class="form-control" name="text" aria-describedby="basic-addon1"><br><br><br><br><br>
+                </div>
+               <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
+                
+            
+          </form>
       </div>
     </div>
   </div>  
+    <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Додати цитату про інститут
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+          <form action="app/add_about_ippt.php" method="POST" enctype="multipart/form-data">
+            
+                <div class="input-group">
+                  
+                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Цитата: </span>
+                  <input type="text" class="form-control" name="title"  aria-describedby="basic-addon1">
+                     <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">ім'я та статус: </span>
+                  <input type="text" class="form-control" name="status"  aria-describedby="basic-addon1">
+                     <input type="hidden" name="10000" value="30000" />
+                  <span class="fa fa-key" aria-hidden="true"></span>
+                  <input style="margin-left: 5px;" type='file' name="photo">
+                </div>
+
+               <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
+                
+            
+          </form>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 

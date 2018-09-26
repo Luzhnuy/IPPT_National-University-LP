@@ -1,3 +1,28 @@
+<?php 
+include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+$slider = R::getAll("SELECT * FROM slider ORDER BY id DESC LIMIT 2 ");
+
+$adwards_count= R::getCell("SELECT count(*) FROM adward");
+// $f = $adwards_count-9;
+$s = $adwards_count-6;
+$th= $adwards_count-9;
+// $fo = $adwards_count-9;
+// echo "<div style='width:100%;background:red;'>$adwards_count</div>";
+$adwards_first = R::getAll("SELECT * FROM adward ORDER BY id DESC LIMIT 3 ");
+$adwards_second = R::getAll("SELECT * FROM adward ORDER BY id LIMIT 3 OFFSET $s");
+$adwards_third = R::getAll("SELECT * FROM adward ORDER BY id LIMIT 3 OFFSET $th ");
+
+$adwards_second = array_reverse($adwards_second);
+$adwards_third = array_reverse($adwards_third);
+
+$about_ippt = R::getAll("SELECT * FROM about");
+
+$news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -131,12 +156,14 @@
 				    <div class="carousel-item active">
 				        <img class="d-block w-100" src="sources/img/news/IMG_183222222.jpg" alt="First slide">
 				    </div>
+				<?php foreach($slider as $slide): ?>
 				    <div class="carousel-item">
-				        <img class="d-block w-100" src="sources/img/slider/slide2.jpg" alt="Second slide">
+				        <img class="d-block w-100" src="<?=$slide['img']; ?>" alt="Second slide">
 				    </div>
-				    <div class="carousel-item">
+				<?php endforeach; ?>
+				 <!--    <div class="carousel-item">
 				        <img class="d-block w-100" src="sources/img/slider/slide3.jpg" alt="Third slide">
-				    </div>
+				    </div> -->
 				</div>
 			</div>
 		</div>
@@ -194,7 +221,23 @@
 							<div class="carousel-inner">
 							    <div class="carousel-item active">
 							    	<div class="row no-gutters">
+							    	<?php foreach($adwards_first as $adward): ?>	
 							    		<div class="col-12 col-md-4">
+							    			<a href="adward.php?adward=<?=$adward['id']; ?>" >
+								    			<div class="board-news board-news-info">
+										           	<div class="board-news-img img">
+										           		<img src="<?=$adward['img']; ?>" alt="board-news-img-1">
+										            </div>
+										           	<div class="board-news-text">
+										           		<h3 class="text-white"><?=$adward['title']; ?></h3>
+														<h5 class="text-green"><?=$adward['data_add']; ?></h5>
+										           		<p class="text-white"><?=$adward['short_text'];?></p>
+										           	</div>
+										        </div>
+									    	</a>
+							    		</div>
+							    	<?php endforeach; ?>	
+		<!-- 					    		<div class="col-12 col-md-4">
 							    			<a href="news.php" >
 								    			<div class="board-news board-news-info">
 										           	<div class="board-news-img img">
@@ -221,113 +264,47 @@
 										           	</div>
 										        </div>
 									    	</a>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
+							    		</div> -->
 							    	</div>
 							    </div>
 							    <div class="carousel-item">
 							    	<div class="row no-gutters">
+							    		<?php foreach($adwards_second as $adward): ?>	
 							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
+							    			<a href="adward.php?adward=<?=$adward['id']; ?>" >
 								    			<div class="board-news board-news-info">
 										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										           		<img src="<?=$adward['img']; ?>" alt="board-news-img-1">
 										            </div>
 										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           		<h3 class="text-white"><?=$adward['title']; ?></h3>
+														<h5 class="text-green"><?=$adward['data_add']; ?></h5>
+										           		<p class="text-white"><?=$adward['short_text'];?></p>
 										           	</div>
 										        </div>
 									    	</a>
 							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
+							    	<?php endforeach; ?>	
 							    	</div>
 							    </div>
 							    <div class="carousel-item">
 							    	<div class="row no-gutters">
+							    		<?php foreach($adwards_third as $adward): ?>	
 							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
+							    			<a href="adward.php?adward=<?=$adward['id']; ?>" >
 								    			<div class="board-news board-news-info">
 										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
+										           		<img src="<?=$adward['img']; ?>" alt="board-news-img-1">
 										            </div>
 										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
+										           		<h3 class="text-white"><?=$adward['title']; ?></h3>
+														<h5 class="text-green"><?=$adward['data_add']; ?></h5>
+										           		<p class="text-white"><?=$adward['short_text'];?></p>
 										           	</div>
 										        </div>
 									    	</a>
 							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
-							    		<div class="col-12 col-md-4">
-							    			<a href="news.php" >
-								    			<div class="board-news board-news-info">
-										           	<div class="board-news-img img">
-										           		<img src="sources/img/news/IMG_4731.jpg" alt="board-news-img-1">
-										            </div>
-										           	<div class="board-news-text">
-										           		<h3 class="text-white">News 1</h3>
-														<h5 class="text-green">17.08.2017, 8:45</h5>
-										           		<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa totam reprehenderit iste.</p>
-										           	</div>
-										        </div>
-									    	</a>
-							    		</div>
+							    	<?php endforeach; ?>	
 							    	</div>
 							    </div>
 							</div>
@@ -343,7 +320,29 @@
 				<h2 class="text-center">Останні новини</h2>
 
 				<div class="row no-gutters">
+					<?php foreach($news as $new): ?>
 					<div class="col-12 col-md-6 col-lg-6">
+						<a href="news.php?news=<?=$new['id']; ?>" >
+							<div class="news-card">
+								<div class="row no-gutters">
+									<div class="col-12 col-lg-5">
+										<div class="news-card-img img">
+											<img src="<?=$new['img']; ?>" alt="news">
+										</div>
+									</div>
+									<div class="col-12 col-lg-7">
+										<div class="news-card-text">
+											<h3 class="text-white"><?=$new['title']; ?></h3>
+											<h5 class="text-green"><?=$new['data_add']; ?></h5>
+											<p class="text-white"><?=$new['short_text']; ?></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				<?php endforeach; ?>
+<!-- 					<div class="col-12 col-md-6 col-lg-6">
 						<a href="news.php" >
 							<div class="news-card">
 								<div class="row no-gutters">
@@ -402,27 +401,7 @@
 								</div>
 							</div>
 						</a>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6">
-						<a href="news.php" >
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-green">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
+					</div> -->
 				</div>
 				<div class="add-enother-news">
 					<a href="news-archive.php" class="btn btn-green">Переглянути більше</a>
@@ -464,48 +443,33 @@
 					    			</div>
 					    			<div class="col-12 col-md-9">
 					    				<div class="reviews-text">
-								        	<p class="text-grey">"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam repellat illum saepe, mollitia est expedita placeat fuga molestiae?</span>"</p>
-								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
+								        	<p class="text-grey">"<span> Інститут був для мене важливим першим поштовхом у майбутнє професійне життя - спочатку бухгалтера, згодом головного бухгалтера,  директора аутсорсингової компанії і вже тепер тренера та податкового консультанта. Щиро дякую моїм викладачам - натхненникам, а особливо моєму доброму наставнику - ректору Йосипу Яковичу за подаровану "вудочку" у життя!</span>"</p>
+								        	<h6 class="text-green">Мар’яна Кавин
+ 											<span>,податковий консультан</span></h6>
 								        </div>
 					    			</div>
 					    		</div>
 					    	</div>
 					    </div>
+					    <?php foreach($about_ippt as $a_ippt): ?>
 					    <div class="carousel-item">
 					    	<div class="reviews-info">
 						    	<div class="row no-gutters">
 						    		<div class="col-12 col-md-3">
 						    			<div class="reviews-img">
-								        	<img class="d-block img-fluid" src="sources/img/reviews/boss.jpg" alt="Second slide">
+								        	<img class="d-block img-fluid" src="<?=$a_ippt['img']; ?>" alt="Second slide">
 								        </div>
 						    		</div>
 						    		<div class="col-12 col-md-9">
 						    			<div class="reviews-text">
-								        	<p class="text-grey">"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat distinctio voluptatum maxime maiores error earum exe.</span>"</p>
+								        	<p class="text-grey">"<span><?=$a_ippt['title']; ?></span>"</p>
 								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
 								        </div>
 						    		</div>
 						    	</div>
 					    	</div>
 					    </div>
-					    <div class="carousel-item">
-					    	<div class="reviews-info">
-					    		<div class="row no-gutters">
-					    			<div class="col-12 col-md-3">
-					    				<div class="reviews-img">
-								        	<img class="d-block img-fluid" src="sources/img/reviews/boss.jpg" alt="Third slide">
-								        </div>
-					    			</div>
-					    			<div class="col-12 col-md-9">
-					    				<div class="reviews-text">
-								        	<p class="text-grey">"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nostrum, quis temporibus doloremque ullam ut, tempore odit perferendis praesentium add.</span>"</p>
-								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
-								        </div>
-					    			</div>
-					    		</div>
-					    	</div>
-					    </div>
-					</div>
+						<?php endforeach; ?>
 					<a class="carousel-controls carousel-control-prev" href="#sliderReviews" role="button" data-slide="prev">
 					    <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 					    <span class="sr-only">Previous</span>

@@ -1,3 +1,11 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+	$news = R::getAll('SELECT * FROM news');
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,90 +114,37 @@
 					<div class="news-archive-navbar">
 						<ul>
 							<li><a href="#allnews" class="active">Всі новини</a></li>
-							<li><a href="#sport">Спорт</a></li>
-							<li><a href="#science">Наука</a></li>
-							<li><a href="#meeting">Зустрічі</a></li>
-							<li><a href="#trips">Подорожі</a></li>
-							<li><a href="#spring-and-autumn-of-lp">"Весна та Осінь політехніки"</a></li>
+							<li><a href="news_sport.php">Спорт</a></li>
+							<li><a href="news_science.php">Наука</a></li>
+							<li><a href="news_meeting.php">Зустрічі</a></li>
+							<li><a href="news_trips.php">Подорожі</a></li>
+							<li><a href="news_ksi.php">"Весна та Осінь політехніки"</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-12 col-lg-9">
 					<div class="news-archive-section">
 						<h2>Всі новини</h2>
+						<?php foreach($news as $new): ?>
 						<div class="news-archive-container">
 							<div class="row no-gutters">
 								<div class="col-md-4">
 									<div class="news-archive-img img">
-										<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
+										<img src="<?=$new['img']; ?>" alt="news-img">
 									</div>
 								</div>
 								<div class="col-md-8">
 									<div class="news-archive-text">
-										<h3><a href="news.php" class="text-dark-blue">Lorem Ipsum</a></h3>
-										<h5 class="text-green">25.09.2017, 12:00</h5>
-										<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
+										<h3><a href="news.php?news=<?=$new['id']; ?>" class="text-dark-blue"><?=$new['title']; ?></a></h3>
+										<h5 class="text-green"><?=$new['data_add']; ?></h5>
+										<p class="text-black"><?=$new['short_text']; ?></p>
 									</div>
 								</div>
 							</div>
 						</div>
+					<?php endforeach; ?>
 
-						<div class="news-archive-container">
-							<div class="row no-gutters">
-								<div class="col-md-4">
-									<div class="news-archive-img img">
-										<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
-									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="news-archive-text">
-										<h3><a href="news.php" class="text-dark-blue">Lorem Ipsum</a></h3>
-										<h5 class="text-green">25.09.2017, 12:00</h5>
-										<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="news-archive-container">
-							<div class="row no-gutters">
-								<div class="col-md-4">
-									<div class="news-archive-img img">
-										<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
-									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="news-archive-text">
-										<h3><a href="news.php" class="text-dark-blue">Lorem Ipsum</a></h3>
-										<h5 class="text-green">25.09.2017, 12:00</h5>
-										<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="news-archive-footer">
-						<nav aria-label="Page navigation example">
-						    <ul class="pagination">
-							    <li class="page-item">
-							        <a class="page-link" href="#" aria-label="Previous">
-							        	<span aria-hidden="true">&laquo;</span>
-							        	<span class="sr-only">Previous</span>
-							        </a>
-							    </li>
-							    <li class="page-item"><a class="page-link" href="#">1</a></li>
-							    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-							    <li class="page-item"><a class="page-link" href="#">3</a></li>
-							    <li class="page-item">
-							        <a class="page-link" href="#" aria-label="Next">
-							        	<span aria-hidden="true">&raquo;</span>
-							        	<span class="sr-only">Next</span>
-							        </a>
-							    </li>
-						    </ul>
-						</nav>
-					</div>
+	
 				</div>
 			</div>
 		</div>

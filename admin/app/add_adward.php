@@ -1,6 +1,7 @@
 <?php 
 	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
 
+	date_default_timezone_set('UTC');
 
 	if($_POST){
 
@@ -22,18 +23,19 @@
 		}
 			
 
-		$adward = R::dispense('adward');
-		$adward->title=$title;
-		$adward->author=$author;
-		$adward->short_text=$short_text;
-		$adward->photograph=$photograph;
-		$adward->text=$text;
-		$adward->img=$gimages;
-		$adward->data_add = date('h-i-s j-m-y');
-		R::store($adward);
+			$adward = R::dispense('adward');
+			$adward->title=$title;
+			$adward->author=$author;
+			$adward->short_text=$short_text;
+			$adward->photograph=$photograph;
+			$adward->text=$text;
+			$adward->img=$gimages;
+			$adward->data_add = date('j-m-y,h:i ');
+			R::store($adward);
+	
 
-		header('Location:../main.php');
-
+			header('Location:../main.php');
+		
 
 
 
