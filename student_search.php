@@ -1,3 +1,14 @@
+<?php 
+	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+	$degree = $_POST['degree'];
+	$direction = $_POST['direction'];
+	$course = $_POST['course'];
+	$requiredfile = $_POST['requiredfile'];
+
+	$rozklad = R::getCell("SELECT pdf_rozklad FROM rozklad WHERE degree=".$degree." AND direction=".$direction." AND course=".$course." AND requiredfile=".$requiredfile);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,7 +115,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-3">
-			<form action="student_search.php" method="POST" enctype="multipart/form-data">
+<form action="student_search.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <p class="text-bold text-dark-blue">Освітній рівень:</p>
                 <select class="form-control" id="educationalDegree" name="degree">
@@ -150,7 +161,7 @@
 						<div class="file-container">
 							<p class="info-file">
 								<!-- <span>Hello world!</span> -->
-								<embed type="application/pdf" pluginspage="https://get.adobe.com/ru/reader/?promoid=KSWLH" src="sources/pdf/knm-41.pdf">
+								<embed type="application/pdf" pluginspage="https://get.adobe.com/ru/reader/?promoid=KSWLH" src="<?=$rozklad; ?>">
 							</p>
 						</div>
 					</div>

@@ -1,3 +1,13 @@
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+
+$news = R::getCol("SELECT img FROM news");
+
+$adwards = R::getCol("SELECT img from adward");
+
+$photo = $news+$adwards;
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,11 +119,11 @@
 					<ol class="breadcrumb">
 					  <li class="breadcrumb-item"><a href="index.php">Головна</a></li>
 					  <li class="breadcrumb-item"><a href="about-us.php">Про інститут</a></li>
-					  <li class="breadcrumb-item"><a href="news-archive.php">Галерея</a></li>
-					  <li class="breadcrumb-item active">Lorem ipsum</li>
+					  <li class="breadcrumb-item"><a href="news-archive.php">Новини</a></li>
+					  <li class="breadcrumb-item active">Галерея</li>
 					</ol>
 				</div>
-				<div class="col-12 col-lg-3">
+		<!-- 		<div class="col-12 col-lg-3">
 					<div class="gallery-navbar">
 						<ul>
 							<li><a href="#allnews" class="active">Всі альбоми</a></li>
@@ -125,47 +135,22 @@
 							<li><a href="#news-from-world">Новини в світі</a></li>
 						</ul>
 					</div>
-				</div>
-				<div class="col-12 col-lg-9">
+				</div> -->
+				<div class="col-12 col-lg-12">
 					<div class="gallery-section">
-						<h2>Lorem Ipsum</h2>
+						<h2>Галерея</h2>
 						<div class="row">
+						<?php foreach($photo as $p): ?>
 							<div class="col-12 col-md-4">
 								<div class="gallery-album-container">
 									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_183222222.jpg">
-											<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
+										<a data-fancybox="gallery" href="<?=$p; ?>">
+											<img src="<?=$p; ?>" alt="news-img">
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_4786.jpg">
-											<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_4717.jpg">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-md-4">
-								<div class="gallery-album-container">
-									<div class="gallery-img img">
-										<a data-fancybox="gallery" href="sources/img/news/IMG_4805.jpg">
-											<img src="sources/img/news/IMG_4805.jpg" alt="news-img">
-										</a>
-									</div>
-								</div>
-							</div>
+						<?php endforeach; ?>
 						</div>
 					</div>
 				</div>

@@ -2,7 +2,8 @@
 	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
 	$projects = R::getAll("SELECT * FROM iproject");
  	
- 	$first_project = R::getRow("SELECT * FROM iproject WHERE id=1");
+ 	$project_id = $_GET['project'];
+ 	$first_project = R::getRow("SELECT * FROM iproject WHERE id=".$project_id);
 
  ?>
 

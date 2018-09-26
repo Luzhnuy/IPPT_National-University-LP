@@ -189,7 +189,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 			<div class="section-menu-li col-12 col-sm-6 col-lg-3">
 				<i class="icons icons-white fa fa-object-group" aria-hidden="true"></i>
 				<h3 class="text-white">Галерея</h3>
-				<a href="gallery.php" class="btn btn-blue">Читати більше</a>
+				<a href="gallery-album.php" class="btn btn-blue">Читати більше</a>
 			</div>
 			</div>
 		</div>
@@ -463,7 +463,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 						    		<div class="col-12 col-md-9">
 						    			<div class="reviews-text">
 								        	<p class="text-grey">"<span><?=$a_ippt['title']; ?></span>"</p>
-								        	<h6 class="text-green">Lorem Ipsum, <span>lorem ipsum</span></h6>
+								        	<h6 class="text-green"><?=$a_ippt['status'];?></h6>
 								        </div>
 						    		</div>
 						    	</div>
