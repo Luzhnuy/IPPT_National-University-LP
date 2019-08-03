@@ -1,5 +1,5 @@
 <?php 
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 
 	if($_POST){

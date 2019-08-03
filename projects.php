@@ -1,8 +1,9 @@
 <?php
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 	$projects = R::getAll("SELECT * FROM iproject");
- 	
+
  	$first_project = R::getRow("SELECT * FROM iproject WHERE id=1");
+
 
  ?>
 
@@ -70,11 +71,11 @@
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					       		<span class="navbar-toggler-icon-fa"><i class="fa fa-bars" aria-hidden="true"></i></span>
 					    	</button>
-						</div>					
+						</div>
 					</div>
 					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav"> 
+							<ul class="navbar-nav">
 							    <li class="nav-item">
 									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
@@ -90,7 +91,7 @@
 								<li class="nav-item">
 									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
-							</ul>    
+							</ul>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4">
@@ -121,7 +122,7 @@
 							<ul class="nav nav-tabs projects-page-tabs" role="tablist">
 								<?php foreach($projects as $p): ?>
 									<li role="presentation"><a class="post-text" href="else_project.php?project=<?=$p['id']; ?>"  aria-controls="progect-1" role="tab" ><?=$p['title'] ?></a></li>
-								<?php endforeach; ?>	
+								<?php endforeach; ?>
 								<!-- <li role="presentation"><a class="post-text" href="#project-2" aria-controls="project-2" role="tab" data-toggle="tab">Проект 2</a></li>
 								<li role="presentation"><a class="post-text" href="#project-3" aria-controls="project-3" role="tab" data-toggle="tab">Проект 3</a></li> -->
 							</ul>
@@ -130,10 +131,14 @@
 					<div class="col-12 col-lg-9">
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane fade in active show" id="progect-1">
+								<?php if($first_project): ?>
 								<h2><?=$first_project['title']; ?></h2>
 								<p class="text-green text-bold text-italic"><?=$first_project['short_text']; ?></p>
 								<p><?=$first_project['text']; ?></p>
 							</div>
+								<?php else: ?>
+									<h2>Вибачте на даний момент проекти недоступні </h2>
+								<?php endif; ?>
 
 							<div role="tabpanel" class="tab-pane fade" id="project-2">
 								<h2>Проект 2</h2>
@@ -160,7 +165,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">

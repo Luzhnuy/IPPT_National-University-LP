@@ -221,9 +221,11 @@
 							<div role="tabpanel" class="tab-pane fade in"  id="conditions-of-entr">
 								<h2>Умови вступу</h2>
 								<ul>
-									<li><a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/pravyla-pryyomu" class="text-green">Правила прийому в 2018 році (бакалавр та магістр)</a></li>
+									<li><a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/pravyla-pryyomu" class="text-green">Правила прийому в 2019 році (бакалавр та магістр)</a></li>
 									<li>
-										<a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/pravyla-pryyomu" class="text-green">Правила прийому в 2018 році (молодший спеціаліст)</a>
+										<!-- <a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/pravyla-pryyomu" class="text-green"> -->
+										<a target="_blank" href="sources/pdf/Правила_МС_04.02.19_цілі.pdf" class="text-green">
+										Правила прийому в 2019 році (молодший спеціаліст)</a>
 										<ul>
 											<li><a target="_blank" href="sources/pdf/programa_z_ukr_mova_na_osnovi_9_klasu_2018.pdf" class="text-green">Програма вступного випробування з української мови</a></li>
 											<li><a target="_blank" href="sources/pdf/programa_z_matematiki_na_osnovi_9_klasu__2018.pdf" class="text-green">Програма вступного випробування з математики</a></li>
@@ -237,10 +239,10 @@
 								<p class="text-bold">Додатки до Правил прийому:</p>
 								<p>ОС «Бакалавр», «Магістр»</p>
 								<ul>
-									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_1_ippt.pdf" class="text-green">Додаток 1. (ІППТ) Перелік освітніх ступенів та спеціальностей, за якими оголошується прийом на навчання, ліцензовані обсяги, терміни</a></li>
-									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_3_ippt.pdf" class="text-green">Додаток 3. (ІППТ) Перелік спеціальностей та вступних випробувань для прийому на навчання осіб, які здобули ОКР молодший  спеціаліст</a></li>
-									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_4_ippt.pdf" class="text-green">Додаток 4. (ІППТ) Перелік спеціальностей, вступних випробувань для прийому на навчання для здобуття освітнього ступеню магістра</a></li>
-									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_5_ippt_2018.pdf" class="text-green">Додаток 5. (ІППТ) Перелік конкурсних предметів у сертифікаті Українського центру оцінювання якості освіти</a></li>
+									<li><a target="_blank" href="sources/pdf/Додаток_1н_19_ІППТ_нов.pdf" class="text-green">Додаток 1. (ІППТ) Перелік освітніх ступенів та спеціальностей, за якими оголошується прийом на навчання, ліцензовані обсяги, терміни</a></li>
+									<li><a target="_blank" href="sources/pdf/ДОДАТОК 3.7_ІППТ (1).pdf" class="text-green">Додаток 3. (ІППТ) Перелік спеціальностей та вступних випробувань для прийому на навчання осіб, які здобули ОКР молодший  спеціаліст</a></li>
+									<li><a target="_blank" href="sources/pdf/Додаток 4 2019_ІППТ.pdf" class="text-green">Додаток 4. (ІППТ) Перелік спеціальностей, вступних випробувань для прийому на навчання для здобуття освітнього ступеню магістра</a></li>
+									<li><a target="_blank" href="sources/pdf/Додаток_5н_19_ІППТ_нов.pdf" class="text-green">Додаток 5. (ІППТ) Перелік конкурсних предметів у сертифікаті Українського центру оцінювання якості освіти</a></li>
 								</ul>
 								<p>ОКР «Молодший спеціаліст»</p>
 								<ul>

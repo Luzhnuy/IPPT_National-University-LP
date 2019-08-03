@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 $news_count= R::getCell("SELECT count(*) FROM news");
 
@@ -83,7 +83,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					       		<span class="navbar-toggler-icon-fa"><i class="fa fa-bars" aria-hidden="true"></i></span>
 					    	</button>
-						</div>					
+						</div>
 					</div>
 					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -136,7 +136,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 						</div>
 						<div class="news-body">
 							<div class="news-info">
-								<h6>02.10.2017, <span class="news-author-photo">(Автор: <span><?=$news['author']; ?></span>, Фотограф: <span><?=$news['photograph']; ?></span></span>)</h6>
+								<h6> <span class="news-author-photo">(Автор: <span><?=$news['author']; ?></span>, Фотограф: <span><?=$news['photograph']; ?></span></span>)</h6>
 							</div>
 							<div class="row">
 								<div class="col-7">
@@ -182,7 +182,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 											</div>
 										</div>
 									</div> -->
-									
+
 								</div>
 							</div>
 						</div>
@@ -204,7 +204,8 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 						</div>
 						<div class="last-news-navbar-body">
 							<div class="row no-gutters">
-							<?php foreach ($latest_news as $l_news): ?>	
+              <?php if($latest_news): ?>
+							<?php foreach ($latest_news as $l_news): ?>
 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="last-news">
 										<div class="last-news-img img">
@@ -219,6 +220,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 									</div>
 								</div>
 							<?php endforeach; ?>
+            <?php endif; ?>
 								<!-- <hr> -->
 <!-- 								<div class="col-12 col-md-6 col-lg-12">
 									<div class="last-news">
@@ -236,6 +238,7 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 							</div>
 						</div>
 					</div>
+          <?php if($news_random): ?>
 					<div class="top-news-navbar">
 						<div class="top-news-navbar-header">
 							<h3 class="text-white text-center">Популярні новини</h3>
@@ -272,12 +275,13 @@ $news = R::getRow("SELECT * FROM news WHERE id=".$news_id);
 							</div>
 						</div>
 					</div>
+        <?php endif; ?>
 				</div>
 			</div>
-			
+
 		</div>
 	</section>
-	
+
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">

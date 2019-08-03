@@ -1,5 +1,5 @@
 <?php 
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 	$news = R::getAll('SELECT * FROM news WHERE type_of_new=4');
 
@@ -74,7 +74,7 @@
 		<div id="about-csi" class="about-csi">
 			<div class="container">
 				<h2 class="text-blue text-center"><span>Про нас</span></h2>
-				
+
 					<div class="row no-gutters">
 						<div class="col-12 col-md-6">
 							<div class="info-about-us text-blue">

@@ -1,6 +1,6 @@
-<?php 
-	
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+<?php
+
+	include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 if($_SESSION){
   } else {
@@ -30,6 +30,9 @@ if($_SESSION){
 	      <li class="nav-item">
 	        <a class="nav-link" href="rozklad.php">Залити Розклад</a>
 	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" href="delete.php">Видалити</a>
+	      </li>
 <!-- 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Pricing</a>
 	      </li>
@@ -38,8 +41,8 @@ if($_SESSION){
 	      </li>
 	    </ul>
 	  </div>
-</nav>	
-	
+</nav>
+
 <section class="container rozklad">
 <div class="container">
         <div class="row">
@@ -103,6 +106,6 @@ if($_SESSION){
 
 	<!-- Bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
 </html>

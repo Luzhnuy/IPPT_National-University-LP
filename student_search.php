@@ -1,5 +1,5 @@
 <?php 
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 	$degree = $_POST['degree'];
 	$direction = $_POST['direction'];
@@ -73,11 +73,11 @@
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					       		<span class="navbar-toggler-icon-fa"><i class="fa fa-bars" aria-hidden="true"></i></span>
 					    	</button>
-						</div>					
+						</div>
 					</div>
 					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav"> 
+							<ul class="navbar-nav">
 							    <li class="nav-item">
 									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
@@ -93,7 +93,7 @@
 								<li class="nav-item">
 									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
-							</ul>    
+							</ul>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4">
@@ -151,7 +151,7 @@
                   <option value="4">Рейтинг студентів</option>
                 </select>
             </div>
-          
+
             <div class="form-group">
               <button class="btn btn-green" type="submit">Завантажити файл</button>
             </div>
@@ -284,7 +284,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">

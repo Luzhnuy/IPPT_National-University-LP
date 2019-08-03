@@ -1,6 +1,6 @@
-<?php 
-	
-	include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+<?php
+
+	include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 if($_SESSION){
   } else {
@@ -30,6 +30,9 @@ if($_SESSION){
 	      <li class="nav-item">
 	        <a class="nav-link" href="rozklad.php">Залити Розклад</a>
 	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" href="delete.php">Видалити</a>
+	      </li>
 	    <!--   <li class="nav-item">
 	        <a class="nav-link" href="#">Pricing</a>
 	      </li>
@@ -38,8 +41,8 @@ if($_SESSION){
 	      </li>
 	    </ul>
 	  </div>
-</nav>	
-	
+</nav>
+
 <section class="container">
 	<div class="accordion" id="accordionExample">
   <div class="card">
@@ -54,7 +57,7 @@ if($_SESSION){
     <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
           <form action="app/add_adward.php" method="POST" enctype="multipart/form-data">
-            
+
                 <div class="input-group">
                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Заголовок: </span>
                   <input type="text" class="form-control" name="title"  aria-describedby="basic-addon1">
@@ -71,8 +74,8 @@ if($_SESSION){
                   <input style="margin-left: 5px;" type='file' name="img">
                 </div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
-                
-            
+
+
           </form>
       </div>
     </div>
@@ -88,7 +91,7 @@ if($_SESSION){
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
  <form action="app/add_new.php" method="POST" enctype="multipart/form-data">
-            
+
                 <div class="input-group">
                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Заголовок: </span>
                   <input type="text" class="form-control" name="title"  aria-describedby="basic-addon1">
@@ -112,8 +115,8 @@ if($_SESSION){
                   <option value="5">Подорожі</option>
                 </select></div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
-                
-            
+
+
           </form>
       </div>
     </div>
@@ -129,16 +132,16 @@ if($_SESSION){
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
                  <form action="app/add_slider.php" method="POST" enctype="multipart/form-data">
-            
+
                 <div class="input-group">
-                  
+
                   <input type="hidden" name="10000" value="30000" />
                   <span class="fa fa-key" aria-hidden="true"></span>
                   <input style="margin-left: 5px;" type='file' name="slide">
                 </div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
-                
-            
+
+
           </form>
       </div>
     </div>
@@ -154,9 +157,9 @@ if($_SESSION){
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
       <div class="card-body">
           <form action="app/add_project.php" method="POST" enctype="multipart/form-data">
-            
+
                 <div class="input-group">
-                  
+
                    <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Заголовок: </span>
                   <input type="text" class="form-control" name="title"  aria-describedby="basic-addon1">
                    <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Головний тезис: </span>
@@ -165,12 +168,12 @@ if($_SESSION){
                   <input type="textarea" class="form-control" name="text" aria-describedby="basic-addon1"><br><br><br><br><br>
                 </div>
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
-                
-            
+
+
           </form>
       </div>
     </div>
-  </div>  
+  </div>
     <div class="card">
     <div class="card-header" id="headingFour">
       <h5 class="mb-0">
@@ -182,9 +185,9 @@ if($_SESSION){
     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
       <div class="card-body">
           <form action="app/add_about_ippt.php" method="POST" enctype="multipart/form-data">
-            
+
                 <div class="input-group">
-                  
+
                    <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Цитата: </span>
                   <input type="text" class="form-control" name="title"  aria-describedby="basic-addon1">
                      <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">ім'я та статус: </span>
@@ -195,8 +198,8 @@ if($_SESSION){
                 </div>
 
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
-                
-            
+
+
           </form>
       </div>
     </div>
@@ -212,26 +215,26 @@ if($_SESSION){
     <div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
       <div class="card-body">
           <form action="app/add_department_person.php" method="POST" enctype="multipart/form-data">
-            
+
                 <div class="input-group">
-                  
+
                    <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Прізвище,Ім'я,по-батькові: </span>
                   <input type="text" class="form-control" name="name"  aria-describedby="basic-addon1">
                   <span style="margin-left: 5px;" class="input-group-addon" id="basic-addon1">Звання і заслуги: </span>
                   <input type="text" class="form-control" name="zaz"  aria-describedby="basic-addon1">
-               
-           
+
+
                 </div>
                 <div style="text-align: center;margin-top: 5vh"><select class="form-control" name="department" multiple="multiple">
                   <option value="1">ІСТ</option>
                   <option value="2">ЕКМ</option>
                   <option value="3">ФОА</option>
-                 
+
                 </select></div>
 
                <div style="text-align: center; margin-top:5vh;"><button type="submit">Відправити</button></div>
-                
-            
+
+
           </form>
       </div>
     </div>
@@ -247,6 +250,6 @@ if($_SESSION){
 
 	<!-- Bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?php 
-include($_SERVER['DOCUMENT_ROOT'].'/ippt-website/config/config.php');
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
 $slider = R::getAll("SELECT * FROM slider ORDER BY id DESC LIMIT 2 ");
 
@@ -10,15 +10,23 @@ $th= $adwards_count-9;
 // $fo = $adwards_count-9;
 // echo "<div style='width:100%;background:red;'>$adwards_count</div>";
 $adwards_first = R::getAll("SELECT * FROM adward ORDER BY id DESC LIMIT 3 ");
-$adwards_second = R::getAll("SELECT * FROM adward ORDER BY id LIMIT 3 OFFSET $s");
-$adwards_third = R::getAll("SELECT * FROM adward ORDER BY id LIMIT 3 OFFSET $th ");
+try{
+	$adwards_second = R::getAll("SELECT * FROM adward ORDER BY id LIMIT 3 OFFSET $s");
+	$adwards_third = R::getAll("SELECT * FROM adward ORDER BY id LIMIT 3 OFFSET $th ");
+	$adwards_second = array_reverse($adwards_second);
+	$adwards_third = array_reverse($adwards_third);
+} catch (Exception $e) {
+	$adward_second = 0;
+	$adward_third = 0;
 
-$adwards_second = array_reverse($adwards_second);
-$adwards_third = array_reverse($adwards_third);
+}
+
 
 $about_ippt = R::getAll("SELECT * FROM about");
 
 $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
+
+
 
 ?>
 
@@ -28,6 +36,16 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 <head>
 	<meta charset="UTF-8">
 	<title>IPPT - main page</title>
+
+	<meta name="keywords" content="іппт,вища освіта львів,Інститут підприємництва та перспективних технологій,вступ,молодший спеціаліст, молодший бакалавр,маркетинг, фінанси, комп'ютерні науки, іт,львівська політехніка, інститут, університет,комп'ютерний еколого-економічний моніторинг,ippt" />
+	<meta name="description" content="Інститут підприємництва та перспективних технологій Національного Університету Львівська Політехніка,ІППТ,іппт" />
+	<meta name="author" content="Любомир Лужний" />
+	<meta name="document-state" content="Dynamic" />
+	<meta name="revisit" content="5" />
+	<meta name="robots" content="index,follow" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
 
 
 	<link rel="icon" href="/logo.png" type="image/x-icon">
@@ -48,14 +66,27 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 
 	<!-- My styles -->
 	<link rel="stylesheet" href="sources/css/style.min.css">
+	<meta name="google-site-verification" content="ozuebtOBfIsPvMnQEVYxa16rgl-kaUKPXME5HM3jBNA" />
+	<style media="screen">
+
+	.l:hover h1{
+		text-decoration: underline;
+
+	}
+	.l:hover p{
+		text-decoration: underline;
+
+	}
+	</style>
+
 </head>
 <body>
 	<!-- Preloader -->
-	<div id="preloader">
+<!--	<div id="preloader">
 		<div class="preload-img">
 			<img class="preload-logo" src="sources/img/logo.png" alt="logo">
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Header -->
 	<header id="header" class="header">
@@ -76,10 +107,10 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2 align-self-center">
 						<div class="nav-contacts">
 							<div class="row justify-content-end">
-								<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-								<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="https://www.facebook.com/nulpippt/" target="_blank"><i class="fa fa-facebook"></i></a>
+								<!-- <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
 								<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-								<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+								<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a> -->
 							</div>
 						</div>
 					</div>
@@ -94,11 +125,11 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					       		<span class="navbar-toggler-icon-fa"><i class="fa fa-bars" aria-hidden="true"></i></span>
 					    	</button>
-						</div>					
+						</div>
 					</div>
 					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav"> 
+							<ul class="navbar-nav">
 							    <li class="nav-item active">
 									<a class="nav-link" href="index.php">Головна <span class="sr-only">(current)</span></a>
 								</li>
@@ -114,7 +145,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 								<li class="nav-item">
 									<a class="nav-link" href="news-archive.php">Новини</a>
 								</li>
-							</ul>    
+							</ul>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4">
@@ -193,17 +224,26 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 			</div>
 			</div>
 		</div>
-
+<!-- 		<div id="introduction" class="introduction">
+			<div class="container"><a href="sources/pdf/Остаточні висновки.pdf" target="_blank" class="l"style="color:none;">
+				<h1 style="margin-bottom:1vh;">Висновки експертних комісій МОН України</h1>
+					<span style="font-size:14pt;color:black;font-weight:bold;">(ліцензування,акредитація спеціальностей)</span>
+				<p style="color:black;margin-top:3vh;">Експертні висновки про проведення первинної акредитаційної експертизи з підготовки фахівців ОПП «Комп’ютерний еколого-економічний моніторинг» зі спеціальності 122 Комп’ютерні науки  (магістр)
+у ВСП НН ІППТ НУ "Львіська політехніка"</p>
+				</a>
+			</div>
+		</div> -->
 		<!-- INTRODUCTION -->
 		<div id="introduction" class="introduction">
 			<div class="container">
-				<h1>Вступна кампанія 2018</h1>
+				<h1>Вступна кампанія 2019</h1>
 				<p>Умови вступу у вищий навчальний заклад уже тут!</p>
 				<a href="entrant.php" class="btn btn-green">Читати більше</a>
 			</div>
 		</div>
 
 		<!-- BOARD -->
+		<?php if($adwards_count>0): ?>
 		<div id="board" class="board">
 			<div class="container">
 				<div class="row">
@@ -212,8 +252,8 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 						<h2>Дошка оголошень</h2>
 						<ol class="carousel-indicators" data-target="#boardCarousel">
 							<li data-target="#boardCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#boardCarousel" data-slide-to="1"></li>
-							<li data-target="#boardCarousel" data-slide-to="2"></li>
+						<!--	<li data-target="#boardCarousel" data-slide-to="1"></li>
+							<li data-target="#boardCarousel" data-slide-to="2"></li>-->
 						</ol>
 					</div>
 					<div class="right-side col-12 col-lg-9">
@@ -221,22 +261,24 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 							<div class="carousel-inner">
 							    <div class="carousel-item active">
 							    	<div class="row no-gutters">
-							    	<?php foreach($adwards_first as $adward): ?>	
+										<?php if($adwards_first): ?>
+							    	<?php foreach($adwards_first as $adward): ?>
 							    		<div class="col-12 col-md-4">
 							    			<a href="adward.php?adward=<?=$adward['id']; ?>" >
 								    			<div class="board-news board-news-info">
 										           	<div class="board-news-img img">
 										           		<img src="<?=$adward['img']; ?>" alt="board-news-img-1">
 										            </div>
-										           	<div class="board-news-text">
+										           	<div class="board-news-text" style="height:auto;">
 										           		<h3 class="text-white"><?=$adward['title']; ?></h3>
-														<h5 class="text-green"><?=$adward['data_add']; ?></h5>
+
 										           		<p class="text-white"><?=$adward['short_text'];?></p>
 										           	</div>
 										        </div>
 									    	</a>
 							    		</div>
-							    	<?php endforeach; ?>	
+							    	<?php endforeach; ?>
+									<?php endif; ?>
 		<!-- 					    		<div class="col-12 col-md-4">
 							    			<a href="news.php" >
 								    			<div class="board-news board-news-info">
@@ -267,9 +309,10 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 							    		</div> -->
 							    	</div>
 							    </div>
-							    <div class="carousel-item">
+							  <!--  <div class="carousel-item">
 							    	<div class="row no-gutters">
-							    		<?php foreach($adwards_second as $adward): ?>	
+											<?php if($adward_second): ?>
+							    		<?php foreach($adwards_second as $adward): ?>
 							    		<div class="col-12 col-md-4">
 							    			<a href="adward.php?adward=<?=$adward['id']; ?>" >
 								    			<div class="board-news board-news-info">
@@ -278,18 +321,20 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white"><?=$adward['title']; ?></h3>
-														<h5 class="text-green"><?=$adward['data_add']; ?></h5>
+
 										           		<p class="text-white"><?=$adward['short_text'];?></p>
 										           	</div>
 										        </div>
 									    	</a>
 							    		</div>
-							    	<?php endforeach; ?>	
+							    	<?php endforeach; ?>
+									<?php endif; ?>
 							    	</div>
-							    </div>
-							    <div class="carousel-item">
+							    </div> -->
+							   <!-- <div class="carousel-item">
 							    	<div class="row no-gutters">
-							    		<?php foreach($adwards_third as $adward): ?>	
+											<?php if($adward_third): ?>
+							    		<?php foreach($adwards_third as $adward): ?>
 							    		<div class="col-12 col-md-4">
 							    			<a href="adward.php?adward=<?=$adward['id']; ?>" >
 								    			<div class="board-news board-news-info">
@@ -298,28 +343,35 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 										            </div>
 										           	<div class="board-news-text">
 										           		<h3 class="text-white"><?=$adward['title']; ?></h3>
-														<h5 class="text-green"><?=$adward['data_add']; ?></h5>
+
 										           		<p class="text-white"><?=$adward['short_text'];?></p>
 										           	</div>
 										        </div>
 									    	</a>
 							    		</div>
-							    	<?php endforeach; ?>	
+							    	<?php endforeach; ?>
+									<?php endif; ?>
 							    	</div>
-							    </div>
+							    </div> -->
 							</div>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</div>
+	<?php endif; ?>
 
+
+
+
+		<?php if($news): ?>
 		<!-- NEWS -->
 		<div id="last-news" class="last-news">
 			<div class="container">
 				<h2 class="text-center">Останні новини</h2>
 
 				<div class="row no-gutters">
+					<?php if($news): ?>
 					<?php foreach($news as $new): ?>
 					<div class="col-12 col-md-6 col-lg-6">
 						<a href="news.php?news=<?=$new['id']; ?>" >
@@ -333,7 +385,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 									<div class="col-12 col-lg-7">
 										<div class="news-card-text">
 											<h3 class="text-white"><?=$new['title']; ?></h3>
-											<h5 class="text-green"><?=$new['data_add']; ?></h5>
+
 											<p class="text-white"><?=$new['short_text']; ?></p>
 										</div>
 									</div>
@@ -342,73 +394,15 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 						</a>
 					</div>
 				<?php endforeach; ?>
-<!-- 					<div class="col-12 col-md-6 col-lg-6">
-						<a href="news.php" >
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-green">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6">
-						<a href="news.php" >
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-green">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6">
-						<a href="news.php" >
-							<div class="news-card">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-5">
-										<div class="news-card-img img">
-											<img src="sources/img/news/IMG_4717.jpg" alt="news">
-										</div>
-									</div>
-									<div class="col-12 col-lg-7">
-										<div class="news-card-text">
-											<h3 class="text-white">Lorem Ipsum</h3>
-											<h5 class="text-green">18.08.2017, 8.45</h5>
-											<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div> -->
+			<?php endif; ?>
+
 				</div>
 				<div class="add-enother-news">
 					<a href="news-archive.php" class="btn btn-green">Переглянути більше</a>
 				</div>
 			</div>
 		</div>
-
+		<?php endif;  ?>
 		<!-- DIPLOMA -->
 		<div id="diploma" class="diploma">
 			<div class="container">
@@ -438,12 +432,12 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 					    		<div class="row no-gutters">
 					    			<div class="col-12 col-md-3">
 					    				<div class="reviews-img">
-								        	<img class="d-block img-fluid" src="sources/img/reviews/boss.jpg" alt="First slide">
+								        	<img class="d-block img-fluid"  src="sources/img/reviews/boss.jpg" alt="First slide">
 								        </div>
 					    			</div>
 					    			<div class="col-12 col-md-9">
 					    				<div class="reviews-text">
-								        	<p class="text-grey">"<span> Інститут був для мене важливим першим поштовхом у майбутнє професійне життя - спочатку бухгалтера, згодом головного бухгалтера,  директора аутсорсингової компанії і вже тепер тренера та податкового консультанта. Щиро дякую моїм викладачам - натхненникам, а особливо моєму доброму наставнику - ректору Йосипу Яковичу за подаровану "вудочку" у життя!</span>"</p>
+								        	<p class="text-grey"><span> Інститут був для мене важливим першим поштовхом у майбутнє професійне життя - спочатку бухгалтера, згодом головного бухгалтера,  директора аутсорсингової компанії і вже тепер тренера та податкового консультанта. Щиро дякую моїм викладачам - натхненникам, а особливо моєму доброму наставнику - директору Йосипу Яковичу за подаровану "вудочку" у життя!</span>"</p>
 								        	<h6 class="text-green">Мар’яна Кавин
  											<span>,податковий консультан</span></h6>
 								        </div>
@@ -451,6 +445,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 					    		</div>
 					    	</div>
 					    </div>
+							<?php if($about_ippt): ?>
 					    <?php foreach($about_ippt as $a_ippt): ?>
 					    <div class="carousel-item">
 					    	<div class="reviews-info">
@@ -462,7 +457,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 						    		</div>
 						    		<div class="col-12 col-md-9">
 						    			<div class="reviews-text">
-								        	<p class="text-grey">"<span><?=$a_ippt['title']; ?></span>"</p>
+								        	<p class="text-grey"><span><?=$a_ippt['title']; ?></span>"</p>
 								        	<h6 class="text-green"><?=$a_ippt['status'];?></h6>
 								        </div>
 						    		</div>
@@ -470,6 +465,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 					    	</div>
 					    </div>
 						<?php endforeach; ?>
+					<?php endif; ?>
 					<a class="carousel-controls carousel-control-prev" href="#sliderReviews" role="button" data-slide="prev">
 					    <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 					    <span class="sr-only">Previous</span>
@@ -481,7 +477,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 				</div>
 			</div>
 		</div>
-
+</div>
 		<!-- BANERS -->
 		<div id="baners" class="baners">
 			<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -544,7 +540,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Footer -->
 	<footer id="footer" class="footer">
 		<div class="container">
@@ -568,7 +564,7 @@ $news = R::getAll("SELECT * FROM news ORDER BY id DESC LIMIT 4 ");
 						<p class="text-white">
 							<i class="fa fa-copyright" aria-hidden="true"></i>
 							2018 Інститут підприємництва та перспективних технологій <br> НУ "Львівська політехніка"<br>
-							<a class="text-green" href="#our-genius">Розробка та підтримка здійснюється викладачами та студентами ІППТ.</a>
+							<a class="text-green" href="https://www.facebook.com/profile.php?id=100017124885102">Розробка та підтримка здійснюється викладачами та студентами ІППТ.</a>
 						</p>
 					</div>
 				</div>
